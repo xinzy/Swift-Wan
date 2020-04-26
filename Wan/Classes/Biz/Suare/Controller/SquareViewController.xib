@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SquareViewController" customModule="Wan" customModuleProvider="target">
+            <connections>
+                <outlet property="pagerTab" destination="K0F-k7-fJG" id="Wo2-Rq-RDX"/>
+                <outlet property="scrollView" destination="rvz-Cz-o25" id="Zpk-JD-Qop"/>
+                <outlet property="view" destination="iN0-l3-epB" id="YbW-x1-5SN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="McU-PZ-FMO" userLabel="NavigationView">
+                    <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ftd-l0-e7T" userLabel="DividerView">
+                            <rect key="frame" x="0.0" y="43" width="414" height="1"/>
+                            <color key="backgroundColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="CSm-2R-N70"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K0F-k7-fJG" customClass="PagerTab" customModule="Wan" customModuleProvider="target">
+                            <rect key="frame" x="146" y="0.0" width="122" height="44"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="122" id="aVk-Rf-SfG"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="K0F-k7-fJG" secondAttribute="bottom" id="0rk-uW-vDF"/>
+                        <constraint firstItem="K0F-k7-fJG" firstAttribute="top" secondItem="McU-PZ-FMO" secondAttribute="top" id="0vT-hD-tMn"/>
+                        <constraint firstAttribute="trailing" secondItem="Ftd-l0-e7T" secondAttribute="trailing" id="76Q-72-esJ"/>
+                        <constraint firstAttribute="bottom" secondItem="Ftd-l0-e7T" secondAttribute="bottom" id="er8-X4-jr0"/>
+                        <constraint firstAttribute="height" constant="44" id="sev-LQ-O5Z"/>
+                        <constraint firstItem="K0F-k7-fJG" firstAttribute="centerX" secondItem="McU-PZ-FMO" secondAttribute="centerX" id="xOo-Qu-Yr6"/>
+                        <constraint firstItem="Ftd-l0-e7T" firstAttribute="leading" secondItem="McU-PZ-FMO" secondAttribute="leading" id="zqS-Yl-Szd"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" scrollEnabled="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvz-Cz-o25">
+                    <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="sgW-Hm-hgH"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="GBM-Tu-5yF"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="McU-PZ-FMO" secondAttribute="trailing" id="AQw-NH-00L"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rvz-Cz-o25" secondAttribute="bottom" id="FEg-m5-Fu4"/>
+                <constraint firstItem="McU-PZ-FMO" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="ZjP-BU-AbG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="rvz-Cz-o25" secondAttribute="trailing" id="bRj-Xf-M60"/>
+                <constraint firstItem="rvz-Cz-o25" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="iDf-Tg-qRk"/>
+                <constraint firstItem="rvz-Cz-o25" firstAttribute="top" secondItem="McU-PZ-FMO" secondAttribute="bottom" id="vtC-S4-dZd"/>
+                <constraint firstItem="McU-PZ-FMO" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="yFW-z8-TU3"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>
