@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
+        User.autoLogin()
+        
         self.window = UIWindow(frame: mainBounds())
         self.window?.backgroundColor = .white
         self.window?.rootViewController = MainViewController()

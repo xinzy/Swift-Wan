@@ -20,6 +20,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
         guard let windowSecene = (scene as? UIWindowScene) else { return }
         
+        User.autoLogin()
+        
         self.window = UIWindow(windowScene: windowSecene)
         self.window?.frame = mainBounds()
         self.window?.backgroundColor = .white

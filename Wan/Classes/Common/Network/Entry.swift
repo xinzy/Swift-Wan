@@ -6,6 +6,7 @@
 //  Copyright © 2020 Xinzy. All rights reserved.
 //
 
+import UIKit
 
 //MARK: - ApiResult
 /// ApiResult
@@ -129,4 +130,61 @@ struct List<T: HandyJSON>: HandyJSON{
     var total: Int = 0
     
     var datas: [T] = [T]()
+}
+
+//MARK: - 用户
+struct User: HandyJSON {
+    var id: Int = 0
+    var nickname: String = ""
+    var publicName: String = ""
+    var username: String = ""
+    var email: String = ""
+    var token: String = ""
+    var icon: String = ""
+    var type: Int = 0
+    var admin: Bool = false
+    
+    var collectIds: [Int] = [Int]()
+    
+    var favorCount: Int {
+        collectIds.count
+    }
+    
+    var isLogin: Bool {
+        id != 0
+    }
+    static var me: User = User()
+    
+    private static let KEY_LOGIN_ID = "LoginId"
+    private static let KEY_LOGIN_USERNAME = "LoginUsername"
+    private static let KEY_LOGIN_NICKNAME = "LoginNickname"
+    
+    static func autoLogin() {
+        let id = UserDefaults.standard.integer(forKey: User.KEY_LOGIN_ID)
+        guard id > 0 else { return }
+        
+        User.me.id = id
+        User.me.username = UserDefaults.standard.string(forKey: User.KEY_LOGIN_USERNAME) ?? ""
+        User.me.nickname = UserDefaults.standard.string(forKey: KEY_LOGIN_USERNAME) ?? ""
+    }
+    
+    mutating func login(_ user: User) {
+        self.id = user.id
+        self.username = user.username
+        self.nickname = user.nickname
+        
+        UserDefaults.standard.set(user.id, forKey: User.KEY_LOGIN_ID)
+        UserDefaults.standard.set(user.username, forKey: User.KEY_LOGIN_USERNAME)
+        UserDefaults.standard.set(user.nickname, forKey: User.KEY_LOGIN_NICKNAME)
+    }
+    
+    mutating func logout() {
+        self.id = 0
+        self.username = ""
+        self.nickname = ""
+        
+        UserDefaults.standard.set(0, forKey: User.KEY_LOGIN_ID)
+        UserDefaults.standard.set("", forKey: User.KEY_LOGIN_USERNAME)
+        UserDefaults.standard.set("", forKey: User.KEY_LOGIN_NICKNAME)
+    }
 }

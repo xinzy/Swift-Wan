@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		05FEC28373F44948DFC95098 /* Pods_WanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E7FEB30A14B19A9344DD90C7 /* Pods_WanTests.framework */; };
 		16D79A4E8BFB1328C443CFB8 /* Pods_Wan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2119F6F6C070F77B236D219C /* Pods_Wan.framework */; };
+		DE5FA79C2455CAC5002AFCAD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FA79A2455CAC5002AFCAD /* LoginViewController.swift */; };
+		DE5FA79D2455CAC5002AFCAD /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5FA79B2455CAC5002AFCAD /* LoginViewController.xib */; };
+		DE5FA7A12455CBCA002AFCAD /* LoginContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FA7A02455CBCA002AFCAD /* LoginContract.swift */; };
+		DE5FA7A32455CC26002AFCAD /* LoginViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5FA7A22455CC26002AFCAD /* LoginViewPresenter.swift */; };
 		DE65EDDD244DD89400E92A5F /* Imports.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EDDC244DD89400E92A5F /* Imports.swift */; };
 		DE65EDDF244DD9B400E92A5F /* ApiFunc.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EDDE244DD9B400E92A5F /* ApiFunc.swift */; };
 		DE65EDE1244DDC9600E92A5F /* Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EDE0244DDC9600E92A5F /* Entry.swift */; };
@@ -74,6 +78,14 @@
 		DE670749244D587200321185 /* UITableView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67073E244D587200321185 /* UITableView+.swift */; };
 		DE67074A244D587200321185 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE67073F244D587200321185 /* UIColor+.swift */; };
 		DE67074B244D587200321185 /* Functions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE670741244D587200321185 /* Functions.swift */; };
+		DE7B1360245675050030E2EC /* UserHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B135F245675050030E2EC /* UserHeaderView.swift */; };
+		DE7B13622456750C0030E2EC /* UserHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7B13612456750C0030E2EC /* UserHeaderView.xib */; };
+		DE7B136524586ED80030E2EC /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136324586ED80030E2EC /* RegisterViewController.swift */; };
+		DE7B136624586ED80030E2EC /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7B136424586ED80030E2EC /* RegisterViewController.xib */; };
+		DE7B1369245871120030E2EC /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B1367245871120030E2EC /* UserInfoViewController.swift */; };
+		DE7B136A245871120030E2EC /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7B1368245871120030E2EC /* UserInfoViewController.xib */; };
+		DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136B245874200030E2EC /* UserInfoContract.swift */; };
+		DE7B136E245874800030E2EC /* UserInfoViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +104,10 @@
 		2119F6F6C070F77B236D219C /* Pods_Wan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Wan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		22706B63E2A38A6144AD5D9B /* Pods-Wan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wan.release.xcconfig"; path = "Target Support Files/Pods-Wan/Pods-Wan.release.xcconfig"; sourceTree = "<group>"; };
 		BFF5034A6D7AFB1EDB768970 /* Pods-Wan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Wan.debug.xcconfig"; path = "Target Support Files/Pods-Wan/Pods-Wan.debug.xcconfig"; sourceTree = "<group>"; };
+		DE5FA79A2455CAC5002AFCAD /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DE5FA79B2455CAC5002AFCAD /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		DE5FA7A02455CBCA002AFCAD /* LoginContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginContract.swift; sourceTree = "<group>"; };
+		DE5FA7A22455CC26002AFCAD /* LoginViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPresenter.swift; sourceTree = "<group>"; };
 		DE65EDDC244DD89400E92A5F /* Imports.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imports.swift; sourceTree = "<group>"; };
 		DE65EDDE244DD9B400E92A5F /* ApiFunc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiFunc.swift; sourceTree = "<group>"; };
 		DE65EDE0244DDC9600E92A5F /* Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entry.swift; sourceTree = "<group>"; };
@@ -161,6 +177,14 @@
 		DE67073E244D587200321185 /* UITableView+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+.swift"; sourceTree = "<group>"; };
 		DE67073F244D587200321185 /* UIColor+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		DE670741244D587200321185 /* Functions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Functions.swift; sourceTree = "<group>"; };
+		DE7B135F245675050030E2EC /* UserHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserHeaderView.swift; sourceTree = "<group>"; };
+		DE7B13612456750C0030E2EC /* UserHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserHeaderView.xib; sourceTree = "<group>"; };
+		DE7B136324586ED80030E2EC /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		DE7B136424586ED80030E2EC /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		DE7B1367245871120030E2EC /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		DE7B1368245871120030E2EC /* UserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
+		DE7B136B245874200030E2EC /* UserInfoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoContract.swift; sourceTree = "<group>"; };
+		DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewPresenter.swift; sourceTree = "<group>"; };
 		E7FEB30A14B19A9344DD90C7 /* Pods_WanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -204,6 +228,24 @@
 				03E6826AEE653825CAAE43BE /* Pods-WanTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		DE5FA79E2455CBAF002AFCAD /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FA7A22455CC26002AFCAD /* LoginViewPresenter.swift */,
+				DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		DE5FA79F2455CBB7002AFCAD /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+				DE5FA7A02455CBCA002AFCAD /* LoginContract.swift */,
+				DE7B136B245874200030E2EC /* UserInfoContract.swift */,
+			);
+			path = Contract;
 			sourceTree = "<group>";
 		};
 		DE65EDDB244DD79A00E92A5F /* Network */ = {
@@ -427,6 +469,9 @@
 		DE65EE56245432A300E92A5F /* User */ = {
 			isa = PBXGroup;
 			children = (
+				DE7B135E2456707F0030E2EC /* View */,
+				DE5FA79F2455CBB7002AFCAD /* Contract */,
+				DE5FA79E2455CBAF002AFCAD /* Presenter */,
 				DE65EE57245432AC00E92A5F /* Controller */,
 			);
 			path = User;
@@ -436,6 +481,12 @@
 			isa = PBXGroup;
 			children = (
 				DE65EE58245432CB00E92A5F /* UserViewController.swift */,
+				DE5FA79A2455CAC5002AFCAD /* LoginViewController.swift */,
+				DE5FA79B2455CAC5002AFCAD /* LoginViewController.xib */,
+				DE7B136324586ED80030E2EC /* RegisterViewController.swift */,
+				DE7B136424586ED80030E2EC /* RegisterViewController.xib */,
+				DE7B1367245871120030E2EC /* UserInfoViewController.swift */,
+				DE7B1368245871120030E2EC /* UserInfoViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -597,6 +648,15 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		DE7B135E2456707F0030E2EC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DE7B135F245675050030E2EC /* UserHeaderView.swift */,
+				DE7B13612456750C0030E2EC /* UserHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -681,6 +741,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7B136624586ED80030E2EC /* RegisterViewController.xib in Resources */,
 				DE65EE762455756B00E92A5F /* SquareKnowledgeTableViewCell.xib in Resources */,
 				DE65EE7A245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.xib in Resources */,
 				DE67071D244D577B00321185 /* LaunchScreen.storyboard in Resources */,
@@ -689,6 +750,9 @@
 				DE65EE372452C18E00E92A5F /* ProjectTableViewCell.xib in Resources */,
 				DE67071A244D577B00321185 /* Assets.xcassets in Resources */,
 				DE65EE19245181E000E92A5F /* WebViewController.xib in Resources */,
+				DE7B136A245871120030E2EC /* UserInfoViewController.xib in Resources */,
+				DE5FA79D2455CAC5002AFCAD /* LoginViewController.xib in Resources */,
+				DE7B13622456750C0030E2EC /* UserHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,11 +839,14 @@
 				DE65EE18245181E000E92A5F /* WebViewController.swift in Sources */,
 				DE65EE06245092A700E92A5F /* BannerView.swift in Sources */,
 				DE65EE5F2454368C00E92A5F /* PagerTab.swift in Sources */,
+				DE5FA7A32455CC26002AFCAD /* LoginViewPresenter.swift in Sources */,
 				DE670744244D587200321185 /* UIView+.swift in Sources */,
+				DE7B1360245675050030E2EC /* UserHeaderView.swift in Sources */,
 				DE65EE02244ECBBB00E92A5F /* BaseView.swift in Sources */,
 				DE65EE1E2451AA6600E92A5F /* WechatContract.swift in Sources */,
 				DE65EE0B24511ED300E92A5F /* HomeViewPresenter.swift in Sources */,
 				DE670715244D577700321185 /* MainViewController.swift in Sources */,
+				DE5FA7A12455CBCA002AFCAD /* LoginContract.swift in Sources */,
 				DE65EDDD244DD89400E92A5F /* Imports.swift in Sources */,
 				DE65EDE4244DEF4400E92A5F /* ApiUrls.swift in Sources */,
 				DE65EE752455756B00E92A5F /* SquareKnowledgeTableViewCell.swift in Sources */,
@@ -798,14 +865,18 @@
 				DE65EDFC244ECB5200E92A5F /* HomeContract.swift in Sources */,
 				DE65EE212451AAAB00E92A5F /* WechatViewPresenter.swift in Sources */,
 				DE65EDE1244DDC9600E92A5F /* Entry.swift in Sources */,
+				DE5FA79C2455CAC5002AFCAD /* LoginViewController.swift in Sources */,
 				DE65EE2D2452AE9500E92A5F /* ProjectViewPresenter.swift in Sources */,
 				DE65EE79245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.swift in Sources */,
 				DE65EDF7244E892A00E92A5F /* ProjectViewController.swift in Sources */,
 				DE65EE6324551CD500E92A5F /* TagLayout.swift in Sources */,
+				DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */,
 				DE65EE082450937600E92A5F /* BaseTableViewController.swift in Sources */,
 				DE67074A244D587200321185 /* UIColor+.swift in Sources */,
+				DE7B1369245871120030E2EC /* UserInfoViewController.swift in Sources */,
 				DE670748244D587200321185 /* UICollectionView+.swift in Sources */,
 				DE65EE5B245432FB00E92A5F /* SquareViewController.swift in Sources */,
+				DE7B136E245874800030E2EC /* UserInfoViewPresenter.swift in Sources */,
 				DE65EE332452B8FD00E92A5F /* ProjectListViewPresenter.swift in Sources */,
 				DE65EE4B2452E4BA00E92A5F /* FlowLayout.swift in Sources */,
 				DE670713244D577700321185 /* SceneDelegate.swift in Sources */,
@@ -817,6 +888,7 @@
 				DE65EDF3244E891300E92A5F /* HomeViewController.swift in Sources */,
 				DE65EDFF244ECBA600E92A5F /* BaseViewController.swift in Sources */,
 				DE670745244D587200321185 /* String+.swift in Sources */,
+				DE7B136524586ED80030E2EC /* RegisterViewController.swift in Sources */,
 				DE65EE122451655D00E92A5F /* ArticleTableViewCell.swift in Sources */,
 				DE670746244D587200321185 /* Int+Extendsion.swift in Sources */,
 				DE65EDE6244E79A800E92A5F /* Macro.swift in Sources */,
