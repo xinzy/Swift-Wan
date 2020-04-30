@@ -38,8 +38,10 @@ extension UserViewController: UserHeaderViewDelegate {
         switch action {
         case .login:
             let controller = LoginViewController()
-            self.navigationController?.pushViewController(controller, animated: true)
-            break
+            navigationController?.pushViewController(controller, animated: true)
+        case .info:
+            let controller = UserInfoViewController()
+            navigationController?.pushViewController(controller, animated: true)
         default:
             break
         }
@@ -48,7 +50,5 @@ extension UserViewController: UserHeaderViewDelegate {
 
 extension UserViewController {
     @objc private func settingClick() {
-        let controller = UserInfoViewController()
-        navigationController?.pushViewController(controller, animated: true)
     }
 }

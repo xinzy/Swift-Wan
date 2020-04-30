@@ -78,9 +78,17 @@
                                     <constraint firstAttribute="height" constant="14" id="IxA-qC-ZNj"/>
                                 </constraints>
                             </imageView>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loading" translatesAutoresizingMaskIntoConstraints="NO" id="JPB-00-heK">
+                                <rect key="frame" x="268" y="64" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="fPJ-p1-o50"/>
+                                    <constraint firstAttribute="width" constant="16" id="r9c-ze-LLF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="JPB-00-heK" firstAttribute="centerY" secondItem="o3e-UT-DIf" secondAttribute="centerY" id="149-HN-ey4"/>
                             <constraint firstItem="rMM-wu-39F" firstAttribute="leading" secondItem="n9m-Y9-xIw" secondAttribute="trailing" constant="4" id="H7o-TC-IyA"/>
                             <constraint firstItem="f6F-4u-Vo8" firstAttribute="leading" secondItem="rMM-wu-39F" secondAttribute="trailing" constant="8" id="J0I-sm-TSm"/>
                             <constraint firstItem="yz2-yp-vhk" firstAttribute="centerY" secondItem="n9m-Y9-xIw" secondAttribute="centerY" id="SB4-r7-7CR"/>
@@ -89,6 +97,7 @@
                             <constraint firstItem="Wi4-Jb-0RP" firstAttribute="top" secondItem="n9m-Y9-xIw" secondAttribute="bottom" constant="12" id="YIA-Rv-Na6"/>
                             <constraint firstItem="Dgn-LO-hBN" firstAttribute="centerY" secondItem="o3e-UT-DIf" secondAttribute="centerY" id="Ysw-cQ-XSI"/>
                             <constraint firstItem="f6F-4u-Vo8" firstAttribute="centerY" secondItem="n9m-Y9-xIw" secondAttribute="centerY" id="Zxh-7l-3Aa"/>
+                            <constraint firstAttribute="trailing" secondItem="JPB-00-heK" secondAttribute="trailing" constant="12" id="cK1-Th-MfY"/>
                             <constraint firstAttribute="trailing" secondItem="0Lw-BD-WlQ" secondAttribute="trailing" constant="12" id="dxP-tn-fG3"/>
                             <constraint firstItem="rMM-wu-39F" firstAttribute="centerY" secondItem="n9m-Y9-xIw" secondAttribute="centerY" id="etD-GV-fsM"/>
                             <constraint firstItem="o3e-UT-DIf" firstAttribute="leading" secondItem="G3V-v6-Yml" secondAttribute="leading" constant="12" id="hvc-XI-2TL"/>
@@ -123,6 +132,7 @@
                 <outlet property="authorLabel" destination="rMM-wu-39F" id="9pu-UR-41N"/>
                 <outlet property="categoryBtn" destination="0Lw-BD-WlQ" id="j0z-2B-oou"/>
                 <outlet property="favorBtn" destination="Dgn-LO-hBN" id="daX-rQ-tU4"/>
+                <outlet property="loadingImageView" destination="JPB-00-heK" id="mmD-Ho-r6j"/>
                 <outlet property="newImageLeading" destination="Xso-st-IY9" id="63g-3g-qQc"/>
                 <outlet property="newImageView" destination="yz2-yp-vhk" id="gQR-oJ-gUs"/>
                 <outlet property="timeLabel" destination="o3e-UT-DIf" id="Phd-hL-Rgw"/>
@@ -137,6 +147,7 @@
         <image name="ic_author" width="25" height="25"/>
         <image name="ic_favor" width="25" height="25"/>
         <image name="ic_favor_selected" width="25" height="25"/>
+        <image name="ic_loading" width="16" height="16"/>
         <image name="ic_new" width="16" height="16"/>
         <image name="ic_top" width="16" height="16"/>
     </resources>

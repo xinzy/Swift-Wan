@@ -61,7 +61,6 @@ extension ProjectListViewController {
         let article = mProjects[indexPath.row]
         let controller = WebViewController()
         controller.webUrl = article.link
-        controller.webTitle = article.displayTitle
         navigationController?.pushViewController(controller, animated: true)
     }
 }

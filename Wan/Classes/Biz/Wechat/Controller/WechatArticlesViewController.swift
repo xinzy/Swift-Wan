@@ -69,7 +69,6 @@ extension WechatArticlesViewController {
         let article = mArticles[indexPath.row]
         let controller = WebViewController()
         controller.webUrl = article.link
-        controller.webTitle = article.title
         navigationController?.pushViewController(controller, animated: true)
     }
 }

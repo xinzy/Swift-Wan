@@ -60,16 +60,33 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1天前" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-zD-rN2">
-                                <rect key="frame" x="307" y="135.5" width="31" height="15"/>
+                                <rect key="frame" x="104" y="135.5" width="31" height="15"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <color key="textColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ScE-qR-Gam">
+                                <rect key="frame" x="320" y="134" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="L2j-4K-iKw"/>
+                                    <constraint firstAttribute="height" constant="18" id="Lmk-Df-GmV"/>
+                                </constraints>
+                                <state key="normal" image="ic_favor"/>
+                                <state key="selected" image="ic_favor_selected"/>
+                            </button>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_loading" translatesAutoresizingMaskIntoConstraints="NO" id="UwC-xF-lqR">
+                                <rect key="frame" x="322" y="135" width="16" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="fw8-Oa-ERD"/>
+                                    <constraint firstAttribute="width" constant="16" id="vUK-hN-AEF"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="VYb-VD-mm5" secondAttribute="trailing" constant="12" id="1NA-D1-deJ"/>
                             <constraint firstItem="cc5-9x-ggm" firstAttribute="top" secondItem="VYb-VD-mm5" secondAttribute="bottom" constant="12" id="1Sm-oU-ZpY"/>
+                            <constraint firstAttribute="trailing" secondItem="UwC-xF-lqR" secondAttribute="trailing" constant="12" id="2pV-Zq-28T"/>
                             <constraint firstAttribute="trailing" secondItem="Nn5-Uu-1d3" secondAttribute="trailing" constant="12" id="3iU-fc-yLN"/>
                             <constraint firstItem="Nn5-Uu-1d3" firstAttribute="leading" secondItem="wQB-0k-QnO" secondAttribute="trailing" constant="12" id="3nf-0y-Ocf"/>
                             <constraint firstItem="qx2-nK-Ifv" firstAttribute="top" secondItem="wQB-0k-QnO" secondAttribute="top" id="FEl-t5-pWD"/>
@@ -78,13 +95,16 @@
                             <constraint firstAttribute="bottom" secondItem="wQB-0k-QnO" secondAttribute="bottom" constant="8" id="S2H-Fd-Lp4"/>
                             <constraint firstItem="scE-XY-WHA" firstAttribute="leading" secondItem="qx2-nK-Ifv" secondAttribute="trailing" constant="6" id="T2X-Xm-Jcm"/>
                             <constraint firstItem="qx2-nK-Ifv" firstAttribute="leading" secondItem="wQB-0k-QnO" secondAttribute="trailing" constant="12" id="V62-nD-KT8"/>
+                            <constraint firstItem="Hjv-zD-rN2" firstAttribute="leading" secondItem="wQB-0k-QnO" secondAttribute="trailing" constant="12" id="YQF-WH-4cm"/>
                             <constraint firstItem="VYb-VD-mm5" firstAttribute="centerY" secondItem="qx2-nK-Ifv" secondAttribute="centerY" id="iNs-da-EYj"/>
-                            <constraint firstAttribute="trailing" secondItem="Hjv-zD-rN2" secondAttribute="trailing" constant="12" id="j0G-FD-Lwl"/>
                             <constraint firstItem="Nn5-Uu-1d3" firstAttribute="top" secondItem="cc5-9x-ggm" secondAttribute="bottom" constant="8" id="mdY-q3-xPh"/>
                             <constraint firstItem="scE-XY-WHA" firstAttribute="centerY" secondItem="qx2-nK-Ifv" secondAttribute="centerY" id="odW-FW-Wzw"/>
                             <constraint firstItem="wQB-0k-QnO" firstAttribute="top" secondItem="7h4-dk-bj1" secondAttribute="top" constant="8" id="pf5-Z3-8tf"/>
                             <constraint firstItem="cc5-9x-ggm" firstAttribute="leading" secondItem="wQB-0k-QnO" secondAttribute="trailing" constant="12" id="thk-a8-Ol6"/>
                             <constraint firstItem="wQB-0k-QnO" firstAttribute="leading" secondItem="7h4-dk-bj1" secondAttribute="leading" constant="12" id="tp5-YZ-Nep"/>
+                            <constraint firstItem="UwC-xF-lqR" firstAttribute="centerY" secondItem="Hjv-zD-rN2" secondAttribute="centerY" id="xBJ-VO-owe"/>
+                            <constraint firstItem="ScE-qR-Gam" firstAttribute="centerY" secondItem="Hjv-zD-rN2" secondAttribute="centerY" id="xsW-3Y-wnu"/>
+                            <constraint firstAttribute="trailing" secondItem="ScE-qR-Gam" secondAttribute="trailing" constant="12" id="ydW-GK-UJv"/>
                         </constraints>
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -107,6 +127,8 @@
                 <outlet property="categoryBtn" destination="VYb-VD-mm5" id="TRe-PF-zLN"/>
                 <outlet property="coverImageView" destination="wQB-0k-QnO" id="F3V-zu-7N6"/>
                 <outlet property="descLabel" destination="Nn5-Uu-1d3" id="Xov-MA-Qo1"/>
+                <outlet property="favorBtn" destination="ScE-qR-Gam" id="A5m-fY-WI4"/>
+                <outlet property="loadingImageView" destination="UwC-xF-lqR" id="amd-l7-Oq7"/>
                 <outlet property="timeLabel" destination="Hjv-zD-rN2" id="MxW-JR-4dw"/>
                 <outlet property="titleLabel" destination="cc5-9x-ggm" id="5Vs-jZ-rwF"/>
             </connections>
@@ -115,5 +137,8 @@
     </objects>
     <resources>
         <image name="ic_author" width="25" height="25"/>
+        <image name="ic_favor" width="25" height="25"/>
+        <image name="ic_favor_selected" width="25" height="25"/>
+        <image name="ic_loading" width="16" height="16"/>
     </resources>
 </document>

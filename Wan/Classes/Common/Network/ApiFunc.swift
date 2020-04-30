@@ -99,6 +99,12 @@ extension HttpApiProtocol {
     static func loadKnowledgeChapter(_ callback: @escaping RequestCallback<[Chapter]>) {
         httpRequest(systemCategoryURl, [Chapter].self, callback: callback)
     }
+    
+    /// 知识体系下的文章列表
+    static func loadKnowledgeArticles(_ id: Int, _ page: Int, _ callback: @escaping RequestCallback<List<Article>>) {
+        let url = systemArticleUrl(id, page)
+        httpRequest(url, List<Article>.self, callback: callback)
+    }
 }
 
 //MARK: - 用户
@@ -112,8 +118,34 @@ extension HttpApiProtocol {
         httpRequest(loginUrl, User.self, method: .post, params: params, callback: callback)
     }
     
+    /// 用户注册
+    static func register(_ username: String, _ password: String, _ confirm: String, _ callback: @escaping RequestCallback<Any>) {
+        var params = [String : String]()
+        params["username"] = username
+        params["password"] = password
+        params["repassword"] = confirm
+        
+        httpRequest(registerUrl, Any.self, method: .post, params: params, callback: callback)
+    }
+    
     /// 退出登录
     static func logout(_ callback: @escaping RequestCallback<Any>) {
         httpRequest(logoutUrl, Any.self, callback: callback)
+    }
+}
+
+//MARK: - 收藏
+extension HttpApiProtocol {
+    
+    /// 收藏站内资源
+    static func collectSelfArticle(_ id: Int, _ callback: @escaping RequestCallback<Any>) {
+        let url = collectionSelfUrl(id)
+        httpRequest(url, Any.self, method: .post, callback: callback)
+    }
+    
+    /// 取消收藏站内资源
+    static func uncollectSelfArticle(_ id: Int, _ callback: @escaping RequestCallback<Any>) {
+        let url = uncollectionSelfUrl(id)
+        httpRequest(url, Any.self, method: .post, callback: callback)
     }
 }

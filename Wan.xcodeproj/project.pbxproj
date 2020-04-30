@@ -56,7 +56,6 @@
 		DE65EE6324551CD500E92A5F /* TagLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE6224551CD500E92A5F /* TagLayout.swift */; };
 		DE65EE66245559FE00E92A5F /* SquareContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE65245559FE00E92A5F /* SquareContract.swift */; };
 		DE65EE6924555A8500E92A5F /* SquareViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE6824555A8500E92A5F /* SquareViewPresenter.swift */; };
-		DE65EE70245567EE00E92A5F /* TestTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE6F245567EE00E92A5F /* TestTableViewController.swift */; };
 		DE65EE722455732900E92A5F /* UICollectionViewFlexLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE712455732900E92A5F /* UICollectionViewFlexLayout.swift */; };
 		DE65EE752455756B00E92A5F /* SquareKnowledgeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE65EE732455756B00E92A5F /* SquareKnowledgeTableViewCell.swift */; };
 		DE65EE762455756B00E92A5F /* SquareKnowledgeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE65EE742455756B00E92A5F /* SquareKnowledgeTableViewCell.xib */; };
@@ -86,6 +85,12 @@
 		DE7B136A245871120030E2EC /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7B1368245871120030E2EC /* UserInfoViewController.xib */; };
 		DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136B245874200030E2EC /* UserInfoContract.swift */; };
 		DE7B136E245874800030E2EC /* UserInfoViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */; };
+		DEA562CB245915BA0040C8B7 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CA245915BA0040C8B7 /* RegisterContract.swift */; };
+		DEA562CD245916660040C8B7 /* RegisterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */; };
+		DEA562CF2459929B0040C8B7 /* KnowledgeArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CE2459929B0040C8B7 /* KnowledgeArticleViewController.swift */; };
+		DEA562D1245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D0245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift */; };
+		DEA562D3245A81690040C8B7 /* KnowledgeArticleListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D2245A81690040C8B7 /* KnowledgeArticleListContract.swift */; };
+		DEA562D5245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D4245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,7 +156,6 @@
 		DE65EE6224551CD500E92A5F /* TagLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagLayout.swift; sourceTree = "<group>"; };
 		DE65EE65245559FE00E92A5F /* SquareContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareContract.swift; sourceTree = "<group>"; };
 		DE65EE6824555A8500E92A5F /* SquareViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareViewPresenter.swift; sourceTree = "<group>"; };
-		DE65EE6F245567EE00E92A5F /* TestTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTableViewController.swift; sourceTree = "<group>"; };
 		DE65EE712455732900E92A5F /* UICollectionViewFlexLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewFlexLayout.swift; sourceTree = "<group>"; };
 		DE65EE732455756B00E92A5F /* SquareKnowledgeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareKnowledgeTableViewCell.swift; sourceTree = "<group>"; };
 		DE65EE742455756B00E92A5F /* SquareKnowledgeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SquareKnowledgeTableViewCell.xib; sourceTree = "<group>"; };
@@ -185,6 +189,12 @@
 		DE7B1368245871120030E2EC /* UserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		DE7B136B245874200030E2EC /* UserInfoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoContract.swift; sourceTree = "<group>"; };
 		DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewPresenter.swift; sourceTree = "<group>"; };
+		DEA562CA245915BA0040C8B7 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
+		DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPresenter.swift; sourceTree = "<group>"; };
+		DEA562CE2459929B0040C8B7 /* KnowledgeArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleViewController.swift; sourceTree = "<group>"; };
+		DEA562D0245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListViewController.swift; sourceTree = "<group>"; };
+		DEA562D2245A81690040C8B7 /* KnowledgeArticleListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListContract.swift; sourceTree = "<group>"; };
+		DEA562D4245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListViewPresenter.swift; sourceTree = "<group>"; };
 		E7FEB30A14B19A9344DD90C7 /* Pods_WanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -235,6 +245,7 @@
 			children = (
 				DE5FA7A22455CC26002AFCAD /* LoginViewPresenter.swift */,
 				DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */,
+				DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -244,6 +255,7 @@
 			children = (
 				DE5FA7A02455CBCA002AFCAD /* LoginContract.swift */,
 				DE7B136B245874200030E2EC /* UserInfoContract.swift */,
+				DEA562CA245915BA0040C8B7 /* RegisterContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -461,7 +473,8 @@
 			children = (
 				DE65EE5A245432FB00E92A5F /* SquareViewController.swift */,
 				DE65EE5C245435E200E92A5F /* SquareViewController.xib */,
-				DE65EE6F245567EE00E92A5F /* TestTableViewController.swift */,
+				DEA562CE2459929B0040C8B7 /* KnowledgeArticleViewController.swift */,
+				DEA562D0245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -495,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				DE65EE65245559FE00E92A5F /* SquareContract.swift */,
+				DEA562D2245A81690040C8B7 /* KnowledgeArticleListContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -503,6 +517,7 @@
 			isa = PBXGroup;
 			children = (
 				DE65EE6824555A8500E92A5F /* SquareViewPresenter.swift */,
+				DEA562D4245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -838,6 +853,7 @@
 				DE65EE0D2451202300E92A5F /* HttpApi.swift in Sources */,
 				DE65EE18245181E000E92A5F /* WebViewController.swift in Sources */,
 				DE65EE06245092A700E92A5F /* BannerView.swift in Sources */,
+				DEA562D1245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift in Sources */,
 				DE65EE5F2454368C00E92A5F /* PagerTab.swift in Sources */,
 				DE5FA7A32455CC26002AFCAD /* LoginViewPresenter.swift in Sources */,
 				DE670744244D587200321185 /* UIView+.swift in Sources */,
@@ -861,11 +877,12 @@
 				DE65EE362452C18E00E92A5F /* ProjectTableViewCell.swift in Sources */,
 				DE65EE272451C48400E92A5F /* WechatArticlesViewPresenter.swift in Sources */,
 				DE65EDE8244E80F200E92A5F /* MainNavigationController.swift in Sources */,
-				DE65EE70245567EE00E92A5F /* TestTableViewController.swift in Sources */,
 				DE65EDFC244ECB5200E92A5F /* HomeContract.swift in Sources */,
 				DE65EE212451AAAB00E92A5F /* WechatViewPresenter.swift in Sources */,
 				DE65EDE1244DDC9600E92A5F /* Entry.swift in Sources */,
+				DEA562CD245916660040C8B7 /* RegisterViewPresenter.swift in Sources */,
 				DE5FA79C2455CAC5002AFCAD /* LoginViewController.swift in Sources */,
+				DEA562D5245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift in Sources */,
 				DE65EE2D2452AE9500E92A5F /* ProjectViewPresenter.swift in Sources */,
 				DE65EE79245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.swift in Sources */,
 				DE65EDF7244E892A00E92A5F /* ProjectViewController.swift in Sources */,
@@ -883,9 +900,12 @@
 				DE65EE612454398700E92A5F /* Array+.swift in Sources */,
 				DE65EE2F2452B84300E92A5F /* ProjectListViewController.swift in Sources */,
 				DE65EE04244ECE3F00E92A5F /* BasePresenter.swift in Sources */,
+				DEA562CF2459929B0040C8B7 /* KnowledgeArticleViewController.swift in Sources */,
 				DE670747244D587200321185 /* UIViewController+.swift in Sources */,
 				DE65EE722455732900E92A5F /* UICollectionViewFlexLayout.swift in Sources */,
 				DE65EDF3244E891300E92A5F /* HomeViewController.swift in Sources */,
+				DEA562D3245A81690040C8B7 /* KnowledgeArticleListContract.swift in Sources */,
+				DEA562CB245915BA0040C8B7 /* RegisterContract.swift in Sources */,
 				DE65EDFF244ECBA600E92A5F /* BaseViewController.swift in Sources */,
 				DE670745244D587200321185 /* String+.swift in Sources */,
 				DE7B136524586ED80030E2EC /* RegisterViewController.swift in Sources */,

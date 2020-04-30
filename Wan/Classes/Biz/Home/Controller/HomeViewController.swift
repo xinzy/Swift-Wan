@@ -56,7 +56,6 @@ extension HomeViewController: BannerViewDelete {
     
     func bannerView(_ bannerView: BannerView, tapIndex: Int, tapBanner: Banner) {
         let controller = WebViewController()
-        controller.webTitle = tapBanner.title
         controller.webUrl = tapBanner.url
         navigationController?.pushViewController(controller, animated: true)
     }
@@ -86,7 +85,6 @@ extension HomeViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let article = mArticles[indexPath.row]
         let controller = WebViewController()
-        controller.webTitle = article.displayTitle
         controller.webUrl = article.link
         navigationController?.pushViewController(controller, animated: true)
     }

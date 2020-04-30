@@ -15,10 +15,24 @@ class RegisterViewController: BaseViewController {
     
     @IBOutlet weak var registerBtn: AnimatableButton!
     
+    private lazy var mPresenter: RegisterViewPresenter<RegisterViewController> = {
+        return RegisterViewPresenter(self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        
+        registerBtn.addTarget(self, action: #selector(registerClick), for: .touchUpInside)
     }
+}
 
+extension RegisterViewController: RegisterView {
+    
+    func registerSuccess() {
+        navigationController?.popToRootViewController(animated: true)
+    }
+    
+    @objc private func registerClick() {
+        mPresenter.register(usernameField.text ?? "", passwordField.text ?? "", confirmField.text ?? "")
+    }
 }

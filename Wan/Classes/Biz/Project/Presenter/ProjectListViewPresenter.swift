@@ -14,15 +14,15 @@ class ProjectListViewPresenter<View>: ProjectListPresenter where View: ProjectLi
     var chapter: Chapter!
     var mView: View
     
-    private var mPage = 0
-    private var isRefresh: Bool { mPage == 0 }
+    private var mPage = 1
+    private var isRefresh: Bool { mPage == 1 }
     
     required init(_ view: View) {
         self.mView = view
     }
     
     func fetchProjectList() {
-        HttpApis.loadProjectArticles(chapter.courseId, mPage) { [unowned self] in
+        HttpApis.loadProjectArticles(chapter.id, mPage) { [unowned self] in
             if self.isRefresh {
                 self.mView.endRefreshHeader()
             } else {
@@ -44,7 +44,7 @@ class ProjectListViewPresenter<View>: ProjectListPresenter where View: ProjectLi
     }
     
     func refresh() {
-        mPage = 0
+        mPage = 1
         fetchProjectList()
     }
 }

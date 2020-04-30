@@ -77,7 +77,23 @@ let registerUrl = "\(BASE_URL)/user/register"
 let logoutUrl = "\(BASE_URL)/user/logout/json"
 
 
+//MARK: - 收藏
 
+/// 收藏站内文章
+fileprivate let COLLECT_SELF_URL = "\(BASE_URL)/lg/collect/%d/json"
+/// 取消收藏站内文章
+fileprivate let UNCOLLECT_SELF_URL = "\(BASE_URL)/lg/uncollect_originId/%d/json"
+
+
+/// 收藏站内文章
+func collectionSelfUrl(_ id: Int) -> String {
+    String(format: COLLECT_SELF_URL, id)
+}
+
+/// 取消收藏站内文章
+func uncollectionSelfUrl(_ id: Int) -> String {
+    String(format: UNCOLLECT_SELF_URL, id)
+}
 
 // MARK: - 其他
 

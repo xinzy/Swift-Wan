@@ -22,10 +22,18 @@ class UserInfoViewController: BaseViewController {
     }
 
     @IBAction func logoutClick(_ sender: UIButton) {
-        mPresenter.logout()
+        let alert = UIAlertController(title: "确定要退出么？", message: "您确定要退出登录么?", preferredStyle: .alert)
+        let okAction = UIAlertAction(title: "确定", style: .default) { _ in
+            self.mPresenter.logout()
+        }
+        let cancelAction = UIAlertAction(title: "取消", style: .cancel, handler: nil)
+        alert.addAction(okAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true, completion: nil)
     }
 }
 
+//MARK: -View
 extension UserInfoViewController: UserInfoView {
     
     func logoutSuccess() {

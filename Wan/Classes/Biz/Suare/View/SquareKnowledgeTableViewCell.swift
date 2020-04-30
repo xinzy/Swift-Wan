@@ -8,7 +8,12 @@
 
 import UIKit
 
+protocol SquareKnowledgeTableViewCellDelegate {
+    func knowledgeCell(_ cell: SquareKnowledgeTableViewCell, subIndex index: Int, chapter knowledge: Chapter)
+}
+
 fileprivate var cachedCollectionHeight = [String : CGFloat]()
+
 class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
@@ -23,6 +28,7 @@ class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
             collectionViewHeight.constant = heightOfCollectionView(chapter.name)
         }
     }
+    var delegate: SquareKnowledgeTableViewCellDelegate?
     
     private let itemSpacing: CGFloat = 5
     
@@ -39,6 +45,7 @@ class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
         collectionView.collectionViewLayout = layout
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
+        collectionView.delegate = self
         collectionView.xRegister(SquareKnowledgeSubCollectionViewCell.self)
     }
 
@@ -49,7 +56,7 @@ class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
 }
 
 //MARK: - CollectionView DataSource
-extension SquareKnowledgeTableViewCell: UICollectionViewDataSource {
+extension SquareKnowledgeTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         chapter.children.count
     }
@@ -58,6 +65,10 @@ extension SquareKnowledgeTableViewCell: UICollectionViewDataSource {
         let cell = collectionView.xDequeueReusableCell(indexPath) as SquareKnowledgeSubCollectionViewCell
         cell.chapter = self.chapter.children[indexPath.row]
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        delegate?.knowledgeCell(self, subIndex: indexPath.row, chapter: chapter)
     }
 }
 

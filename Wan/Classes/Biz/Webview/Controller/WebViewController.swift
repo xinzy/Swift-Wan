@@ -13,7 +13,6 @@ class WebViewController: BaseViewController {
     @IBOutlet weak var webView: WKWebView!
     @IBOutlet weak var progressBar: UIProgressView!
     
-    var webTitle: String?
     var webUrl: String?
     
     deinit {
@@ -22,7 +21,8 @@ class WebViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = "浏览"
+        
         initWebView()
         initUI()
     }
@@ -43,8 +43,6 @@ class WebViewController: BaseViewController {
     }
     
     private func initUI() {
-        guard let title = webTitle else { return }
-        self.title = title
         guard let url = webUrl, let uri = URL(string: url) else { return }
         webView.load(URLRequest(url: uri))
     }

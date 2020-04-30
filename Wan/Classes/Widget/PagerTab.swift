@@ -47,8 +47,17 @@ class PagerTab: UIView {
         }
     }
     
+    var currentSelectedIndex: Int = 0 {
+        didSet {
+            if currentSelectedIndex >= tabTitles.count || currentSelectedIndex < 0 {
+                currentSelectedIndex = oldValue
+            } else if currentSelectedIndex != oldValue {
+                selectItem(currentSelectedIndex, oldValue)
+            }
+        }
+    }
+    
     private var indicatorView: UIView!
-    private var currentSelectedIndex: Int = 0
     private var lastSelectedButton: UIButton?
     
     override init(frame: CGRect) {
@@ -61,12 +70,12 @@ class PagerTab: UIView {
         setupUi()
     }
     
-    
 }
 
 //MARK: - Setup View
 extension PagerTab {
     
+    /// 初始化tab
     private func setupUi() {
         self.removeAllSubview()
         lastSelectedButton = nil
@@ -106,6 +115,7 @@ extension PagerTab {
         return view
     }
     
+    /// 每一个tab点击事件
     @objc private func onItemClick(_ sender: UIButton) {
         let tag = sender.tag
         
@@ -118,6 +128,21 @@ extension PagerTab {
         
         UIView.animate(withDuration:                                                     0.3) {
             self.indicatorView.frame = CGRect(x: CGFloat(tag) * (self.itemWidth + self.horizontalSpacing), y: self.height - self.indicatorHeight, width: self.itemWidth, height: self.indicatorHeight)
+        }
+    }
+    
+    private func selectItem(_ currentIndex: Int, _ lastIndex: Int) {
+        var currentButton: UIButton? = nil
+        for btn in subviews where btn is UIButton {
+            if btn.tag == currentIndex {
+                currentButton = btn as? UIButton
+                break
+            }
+        }
+        lastSelectedButton?.isSelected = false
+        lastSelectedButton = currentButton
+        UIView.animate(withDuration:                                                     0.3) {
+            self.indicatorView.frame = CGRect(x: CGFloat(currentIndex) * (self.itemWidth + self.horizontalSpacing), y: self.height - self.indicatorHeight, width: self.itemWidth, height: self.indicatorHeight)
         }
     }
 }

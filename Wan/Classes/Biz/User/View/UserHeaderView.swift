@@ -14,7 +14,7 @@ protocol UserHeaderViewDelegate {
 }
 
 enum HeaderViewAction {
-    case login, favor, rank, score, setting
+    case login, info, favor, rank, score, setting
 }
 
 class UserHeaderView: UIView, NibLoadable {
@@ -80,6 +80,8 @@ extension UserHeaderView {
         } else if sender == usernameBtn {
             if let user = self.user, !user.isLogin {
                 delegate.headerView(self, action: .login)
+            } else {
+                delegate.headerView(self, action: .info)
             }
         }
     }
