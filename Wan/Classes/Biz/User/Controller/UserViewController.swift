@@ -43,6 +43,8 @@ extension UserViewController: UserHeaderViewDelegate {
             let controller = UserInfoViewController()
             navigationController?.pushViewController(controller, animated: true)
         default:
+        let controller = TestCollectionViewController()
+        navigationController?.pushViewController(controller, animated: true)
             break
         }
     }

@@ -91,6 +91,15 @@
 		DEA562D1245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D0245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift */; };
 		DEA562D3245A81690040C8B7 /* KnowledgeArticleListContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D2245A81690040C8B7 /* KnowledgeArticleListContract.swift */; };
 		DEA562D5245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D4245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift */; };
+		DEA562DA245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562D8245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift */; };
+		DEA562DB245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562D9245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib */; };
+		DEA562DE245AC01C0040C8B7 /* NavigationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562DC245AC01C0040C8B7 /* NavigationTableViewCell.swift */; };
+		DEA562DF245AC01C0040C8B7 /* NavigationTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562DD245AC01C0040C8B7 /* NavigationTableViewCell.xib */; };
+		DEA562E2245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562E0245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.swift */; };
+		DEA562E3245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562E1245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib */; };
+		DEA562E6245AF29A0040C8B7 /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562E5245AF29A0040C8B7 /* TestCollectionViewController.swift */; };
+		DEA562EA245AF2E90040C8B7 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562E8245AF2E90040C8B7 /* TestCollectionViewCell.swift */; };
+		DEA562EB245AF2E90040C8B7 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -195,6 +204,15 @@
 		DEA562D0245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListViewController.swift; sourceTree = "<group>"; };
 		DEA562D2245A81690040C8B7 /* KnowledgeArticleListContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListContract.swift; sourceTree = "<group>"; };
 		DEA562D4245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleListViewPresenter.swift; sourceTree = "<group>"; };
+		DEA562D8245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCategoryTableViewCell.swift; sourceTree = "<group>"; };
+		DEA562D9245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationCategoryTableViewCell.xib; sourceTree = "<group>"; };
+		DEA562DC245AC01C0040C8B7 /* NavigationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationTableViewCell.swift; sourceTree = "<group>"; };
+		DEA562DD245AC01C0040C8B7 /* NavigationTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationTableViewCell.xib; sourceTree = "<group>"; };
+		DEA562E0245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA562E1245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationItemCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEA562E5245AF29A0040C8B7 /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
+		DEA562E8245AF2E90040C8B7 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
 		E7FEB30A14B19A9344DD90C7 /* Pods_WanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -525,10 +543,16 @@
 		DE65EE6A24555DD200E92A5F /* View */ = {
 			isa = PBXGroup;
 			children = (
-				DE65EE732455756B00E92A5F /* SquareKnowledgeTableViewCell.swift */,
-				DE65EE742455756B00E92A5F /* SquareKnowledgeTableViewCell.xib */,
+				DEA562D8245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift */,
+				DEA562D9245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib */,
+				DEA562E0245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.swift */,
+				DEA562E1245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib */,
+				DEA562DC245AC01C0040C8B7 /* NavigationTableViewCell.swift */,
+				DEA562DD245AC01C0040C8B7 /* NavigationTableViewCell.xib */,
 				DE65EE77245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.swift */,
 				DE65EE78245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.xib */,
+				DE65EE732455756B00E92A5F /* SquareKnowledgeTableViewCell.swift */,
+				DE65EE742455756B00E92A5F /* SquareKnowledgeTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -603,6 +627,7 @@
 				DE65EE56245432A300E92A5F /* User */,
 				DE65EE14245181B600E92A5F /* Webview */,
 				DE65EDED244E84D800E92A5F /* Wechat */,
+				DEA562E4245AF2580040C8B7 /* Test */,
 			);
 			path = Biz;
 			sourceTree = "<group>";
@@ -670,6 +695,24 @@
 				DE7B13612456750C0030E2EC /* UserHeaderView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		DEA562E4245AF2580040C8B7 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DEA562E7245AF2B50040C8B7 /* Cell */,
+				DEA562E5245AF29A0040C8B7 /* TestCollectionViewController.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DEA562E7245AF2B50040C8B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DEA562E8245AF2E90040C8B7 /* TestCollectionViewCell.swift */,
+				DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -758,10 +801,14 @@
 			files = (
 				DE7B136624586ED80030E2EC /* RegisterViewController.xib in Resources */,
 				DE65EE762455756B00E92A5F /* SquareKnowledgeTableViewCell.xib in Resources */,
+				DEA562EB245AF2E90040C8B7 /* TestCollectionViewCell.xib in Resources */,
 				DE65EE7A245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.xib in Resources */,
+				DEA562E3245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib in Resources */,
+				DEA562DF245AC01C0040C8B7 /* NavigationTableViewCell.xib in Resources */,
 				DE67071D244D577B00321185 /* LaunchScreen.storyboard in Resources */,
 				DE65EE5D245435E200E92A5F /* SquareViewController.xib in Resources */,
 				DE65EE132451655D00E92A5F /* ArticleTableViewCell.xib in Resources */,
+				DEA562DB245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib in Resources */,
 				DE65EE372452C18E00E92A5F /* ProjectTableViewCell.xib in Resources */,
 				DE67071A244D577B00321185 /* Assets.xcassets in Resources */,
 				DE65EE19245181E000E92A5F /* WebViewController.xib in Resources */,
@@ -855,6 +902,7 @@
 				DE65EE06245092A700E92A5F /* BannerView.swift in Sources */,
 				DEA562D1245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift in Sources */,
 				DE65EE5F2454368C00E92A5F /* PagerTab.swift in Sources */,
+				DEA562DA245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift in Sources */,
 				DE5FA7A32455CC26002AFCAD /* LoginViewPresenter.swift in Sources */,
 				DE670744244D587200321185 /* UIView+.swift in Sources */,
 				DE7B1360245675050030E2EC /* UserHeaderView.swift in Sources */,
@@ -863,7 +911,9 @@
 				DE65EE0B24511ED300E92A5F /* HomeViewPresenter.swift in Sources */,
 				DE670715244D577700321185 /* MainViewController.swift in Sources */,
 				DE5FA7A12455CBCA002AFCAD /* LoginContract.swift in Sources */,
+				DEA562EA245AF2E90040C8B7 /* TestCollectionViewCell.swift in Sources */,
 				DE65EDDD244DD89400E92A5F /* Imports.swift in Sources */,
+				DEA562E6245AF29A0040C8B7 /* TestCollectionViewController.swift in Sources */,
 				DE65EDE4244DEF4400E92A5F /* ApiUrls.swift in Sources */,
 				DE65EE752455756B00E92A5F /* SquareKnowledgeTableViewCell.swift in Sources */,
 				DE65EDDF244DD9B400E92A5F /* ApiFunc.swift in Sources */,
@@ -903,10 +953,12 @@
 				DEA562CF2459929B0040C8B7 /* KnowledgeArticleViewController.swift in Sources */,
 				DE670747244D587200321185 /* UIViewController+.swift in Sources */,
 				DE65EE722455732900E92A5F /* UICollectionViewFlexLayout.swift in Sources */,
+				DEA562E2245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.swift in Sources */,
 				DE65EDF3244E891300E92A5F /* HomeViewController.swift in Sources */,
 				DEA562D3245A81690040C8B7 /* KnowledgeArticleListContract.swift in Sources */,
 				DEA562CB245915BA0040C8B7 /* RegisterContract.swift in Sources */,
 				DE65EDFF244ECBA600E92A5F /* BaseViewController.swift in Sources */,
+				DEA562DE245AC01C0040C8B7 /* NavigationTableViewCell.swift in Sources */,
 				DE670745244D587200321185 /* String+.swift in Sources */,
 				DE7B136524586ED80030E2EC /* RegisterViewController.swift in Sources */,
 				DE65EE122451655D00E92A5F /* ArticleTableViewCell.swift in Sources */,

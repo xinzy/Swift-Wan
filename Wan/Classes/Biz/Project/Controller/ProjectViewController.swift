@@ -73,7 +73,7 @@ extension ProjectViewController: PageboyViewControllerDataSource, TMBarDataSourc
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
         let chapter = mChapters[index]
-        return TMBarItem(title: chapter.name)
+        return TMBarItem(title: chapter.displayName)
     }
     
     

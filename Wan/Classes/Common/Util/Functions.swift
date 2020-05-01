@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-func xPrint(_ msg: Any..., file: NSString = #file, fun: String = #function, line: Int = #line) {
+func xPrint(file: NSString = #file, fun: String = #function, line: Int = #line, _ msg: Any...) {
     #if DEBUG
     let prefix = "\(file.lastPathComponent) \(fun) \(line): "
     print(prefix, msg)

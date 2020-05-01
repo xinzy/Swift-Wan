@@ -36,8 +36,16 @@ class SquareViewPresenter<View>: SquarePresenter where View: SquareView, View: U
     }
     
     func fetchNavigation() {
-        
+        HttpApis.loadNavi { [unowned self] in
+            self.mView.hideProgress()
+            
+            switch $0 {
+            case .success(let navs):
+                self.mNavigationLoaded = true
+                self.mView.showNav(navs)
+            case .failure(let msg):
+                self.mView.showToast(msg)
+            }
+        }
     }
-    
-    
 }

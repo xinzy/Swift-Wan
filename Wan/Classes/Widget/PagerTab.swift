@@ -47,15 +47,7 @@ class PagerTab: UIView {
         }
     }
     
-    var currentSelectedIndex: Int = 0 {
-        didSet {
-            if currentSelectedIndex >= tabTitles.count || currentSelectedIndex < 0 {
-                currentSelectedIndex = oldValue
-            } else if currentSelectedIndex != oldValue {
-                selectItem(currentSelectedIndex, oldValue)
-            }
-        }
-    }
+    private var currentSelectedIndex: Int = 0
     
     private var indicatorView: UIView!
     private var lastSelectedButton: UIButton?
@@ -131,18 +123,24 @@ extension PagerTab {
         }
     }
     
-    private func selectItem(_ currentIndex: Int, _ lastIndex: Int) {
+    func setSelectedIndex(_ index: Int) {
+        guard index >= 0 && index < tabTitles.count && index != currentSelectedIndex else { return }
+        
         var currentButton: UIButton? = nil
         for btn in subviews where btn is UIButton {
-            if btn.tag == currentIndex {
+            if btn.tag == index {
                 currentButton = btn as? UIButton
                 break
             }
         }
+        currentSelectedIndex = index
         lastSelectedButton?.isSelected = false
         lastSelectedButton = currentButton
-        UIView.animate(withDuration:                                                     0.3) {
-            self.indicatorView.frame = CGRect(x: CGFloat(currentIndex) * (self.itemWidth + self.horizontalSpacing), y: self.height - self.indicatorHeight, width: self.itemWidth, height: self.indicatorHeight)
+        currentButton?.isSelected = true
+        delegate?.pagerTab(self, toIndex: index, toTitle: tabTitles[index])
+        
+        UIView.animate(withDuration: 0.3) {
+            self.indicatorView.frame = CGRect(x: CGFloat(index) * (self.itemWidth + self.horizontalSpacing), y: self.height - self.indicatorHeight, width: self.itemWidth, height: self.indicatorHeight)
         }
     }
 }

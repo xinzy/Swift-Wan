@@ -13,6 +13,8 @@ protocol SquareView: BaseView {
     func showKnowledges(_ knowledges: [Chapter])
     
     func endRefreshKnowledge()
+    
+    func showNav(_ navData: [Navi])
 }
 
 protocol SquarePresenter: BasePresenter {

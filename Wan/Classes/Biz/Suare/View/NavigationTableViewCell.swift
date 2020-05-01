@@ -1,41 +1,38 @@
 //
-//  SquareKnowledgeTableViewCell2.swift
+//  NavigationTableViewCell.swift
 //  Wan
 //
-//  Created by Yang on 2020/4/26.
+//  Created by Yang on 2020/4/30.
 //  Copyright © 2020 Xinzy. All rights reserved.
 //
 
 import UIKit
 
-protocol SquareKnowledgeTableViewCellDelegate {
-    func knowledgeCell(_ cell: SquareKnowledgeTableViewCell, subIndex index: Int, chapter knowledge: Chapter)
+protocol NavigationTableViewCellDelete {
+    /// 导航 链接点击
+    func navigationTableViewCell(_ cell: NavigationTableViewCell, article: Article)
 }
 
-class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
-    @IBOutlet weak var titleLabel: UILabel!
+class NavigationTableViewCell: UITableViewCell, CellRegister {
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     @IBOutlet weak var collectionViewHeight: NSLayoutConstraint!
-    
-    var chapter: Chapter! {
+    var nav: Navi! {
         didSet {
-            titleLabel.text = chapter.name
             collectionView.reloadData()
             
-            collectionViewHeight.constant = heightOfCollectionView(chapter.name)
+            collectionViewHeight.constant = heightOfCollectionView(nav.name)
         }
     }
-    var delegate: SquareKnowledgeTableViewCellDelegate?
     
+    var delegate: NavigationTableViewCellDelete?
     private let itemSpacing: CGFloat = 5
-
-
     fileprivate static var cachedCollectionHeight = [String : CGFloat]()
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        self.selectionStyle = .none
+        selectionStyle = .none
         
         let layout = UICollectionViewFlexLayout()
         layout.minimumLineSpacing = itemSpacing
@@ -47,36 +44,44 @@ class SquareKnowledgeTableViewCell: UITableViewCell, CellRegister {
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         collectionView.dataSource = self
         collectionView.delegate = self
-        collectionView.xRegister(SquareKnowledgeSubCollectionViewCell.self)
+        collectionView.xRegister(NavigationItemCollectionViewCell.self)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+
     }
     
 }
 
-//MARK: - CollectionView DataSource
-extension SquareKnowledgeTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
+extension NavigationTableViewCell: UICollectionViewDataSource, UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        chapter.children.count
+        nav.articles.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.xDequeueReusableCell(indexPath) as SquareKnowledgeSubCollectionViewCell
-        cell.chapter = self.chapter.children[indexPath.row]
+        let cell = collectionView.xDequeueReusableCell(indexPath) as NavigationItemCollectionViewCell
+        cell.name = nav.articles[indexPath.row].title
+        
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        delegate?.knowledgeCell(self, subIndex: indexPath.row, chapter: chapter)
+        delegate?.navigationTableViewCell(self, article: nav.articles[indexPath.row])
     }
 }
 
 //MARK: - CollectionView 高度
-extension SquareKnowledgeTableViewCell {
+extension NavigationTableViewCell {
+//    private func displayedTitle(_ title: String) -> String {
+//        if title.contains("|") {
+//            return String(title.split(separator: "|").last!)
+//        }
+//        return title
+//    }
+    
     private var collectionViewWidth: CGFloat {
-        screenWidth - 44
+        screenWidth - 121 - 24
     }
     
     private var collectionViewContentHeight: CGFloat {
@@ -84,8 +89,8 @@ extension SquareKnowledgeTableViewCell {
         var offsetX: CGFloat = 0
         let maxWidth = collectionViewWidth
         
-        for item in chapter.children {
-            let itemWidth = item.name.width(sizeOfSystem: 12) + 32
+        for item in nav.articles {
+            let itemWidth = item.title.width(sizeOfSystem: 12) + 32
             
             if offsetX + itemWidth > maxWidth { // 需要换行
                 offsetX = itemWidth + itemSpacing
@@ -94,17 +99,21 @@ extension SquareKnowledgeTableViewCell {
                 offsetX += itemSpacing + itemWidth
             }
         }
-        
         return height
     }
     
     /// CollectionView 高度
     private func heightOfCollectionView(_ name: String) -> CGFloat {
-        if let height = SquareKnowledgeTableViewCell.cachedCollectionHeight[name] {
+        if let height = NavigationTableViewCell.cachedCollectionHeight[name] {
             return height
         }
         let h = collectionViewContentHeight
-        SquareKnowledgeTableViewCell.cachedCollectionHeight[name] = h
+        NavigationTableViewCell.cachedCollectionHeight[name] = h
         return h
+    }
+    
+    /// 获取缓存的item height
+    static func itemHeightForKey(key name: String) -> CGFloat {
+        (cachedCollectionHeight[name] ?? 0) + 24
     }
 }

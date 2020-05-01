@@ -51,6 +51,10 @@ struct Chapter: HandyJSON {
         }
         return names
     }
+    
+    var displayName: String {
+        name.replaceAll(["&amp;" : "&"])
+    }
 }
 
 //MARK: - 文章
@@ -96,7 +100,7 @@ struct Article: HandyJSON {
             "&reg;" : "®",
             "&trade;" : "™",
             "&times;" : "×",
-            "&divide;" : "÷"
+            "&divide;" : "÷",
         ]
         return title.replaceAll(dict)
     }
@@ -187,4 +191,11 @@ struct User: HandyJSON {
         UserDefaults.standard.set("", forKey: User.KEY_LOGIN_USERNAME)
         UserDefaults.standard.set("", forKey: User.KEY_LOGIN_NICKNAME)
     }
+}
+
+/// 导航数据
+struct Navi: HandyJSON {
+    var cid: Int = 0
+    var name: String = ""
+    var articles: [Article] = [Article]()
 }

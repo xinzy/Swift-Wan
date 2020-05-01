@@ -149,3 +149,12 @@ extension HttpApiProtocol {
         httpRequest(url, Any.self, method: .post, callback: callback)
     }
 }
+
+//MARK: - 其他API
+extension HttpApiProtocol {
+    
+    /// 导航数据
+    static func loadNavi(_ callback: @escaping RequestCallback<[Navi]>) {
+        httpRequest(navigationUrl, [Navi].self, callback: callback)
+    }
+}
