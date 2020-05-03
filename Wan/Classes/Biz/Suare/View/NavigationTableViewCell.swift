@@ -72,14 +72,7 @@ extension NavigationTableViewCell: UICollectionViewDataSource, UICollectionViewD
 }
 
 //MARK: - CollectionView 高度
-extension NavigationTableViewCell {
-//    private func displayedTitle(_ title: String) -> String {
-//        if title.contains("|") {
-//            return String(title.split(separator: "|").last!)
-//        }
-//        return title
-//    }
-    
+extension NavigationTableViewCell {    
     private var collectionViewWidth: CGFloat {
         screenWidth - 121 - 24
     }

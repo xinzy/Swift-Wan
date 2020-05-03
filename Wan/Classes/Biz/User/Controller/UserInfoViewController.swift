@@ -17,7 +17,7 @@ class UserInfoViewController: BaseViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        title = "个人信息"
         nicknameLabel.text = User.me.nickname
     }
 

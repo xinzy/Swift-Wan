@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddFavorViewController" customModule="Wan" customModuleProvider="target">
+            <connections>
+                <outlet property="authorTextField" destination="oWP-2v-sKF" id="3WS-Ho-nmg"/>
+                <outlet property="linkTextView" destination="73F-5W-ofe" id="6y4-Of-2mX"/>
+                <outlet property="titleTextField" destination="00f-zm-eHH" id="2ch-T1-asI"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="标题" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vg2-kS-R3f">
+                    <rect key="frame" x="48" y="100" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作者" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="01W-RE-3to">
+                    <rect key="frame" x="48" y="142" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="链接" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O9n-cD-Wfw">
+                    <rect key="frame" x="48" y="184" width="31" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入标题" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="00f-zm-eHH" customClass="AnimatableTextField" customModule="IBAnimatable">
+                    <rect key="frame" x="91" y="92" width="275" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="IoO-4H-QvI"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入作者" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oWP-2v-sKF" customClass="AnimatableTextField" customModule="IBAnimatable">
+                    <rect key="frame" x="91" y="134" width="275" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="LeK-hC-0DV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingLeft">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="paddingRight">
+                            <real key="value" value="4"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textField>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="73F-5W-ofe" customClass="AnimatableTextView" customModule="IBAnimatable">
+                    <rect key="frame" x="91" y="176" width="275" height="64"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="SMW-vQ-vmo"/>
+                    </constraints>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholderText" value="输入链接"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" systemColor="systemGray2Color" red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+            <constraints>
+                <constraint firstItem="O9n-cD-Wfw" firstAttribute="top" secondItem="01W-RE-3to" secondAttribute="bottom" constant="24" id="2BX-Bo-3FB"/>
+                <constraint firstItem="Vg2-kS-R3f" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="48" id="61k-CL-7pi"/>
+                <constraint firstItem="00f-zm-eHH" firstAttribute="centerY" secondItem="Vg2-kS-R3f" secondAttribute="centerY" id="Bo5-Uu-fms"/>
+                <constraint firstItem="oWP-2v-sKF" firstAttribute="centerY" secondItem="01W-RE-3to" secondAttribute="centerY" id="GJT-yy-VxQ"/>
+                <constraint firstItem="73F-5W-ofe" firstAttribute="top" secondItem="oWP-2v-sKF" secondAttribute="bottom" constant="8" id="I7D-Da-2jn"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="00f-zm-eHH" secondAttribute="trailing" constant="48" id="KG4-ot-Gvf"/>
+                <constraint firstItem="73F-5W-ofe" firstAttribute="leading" secondItem="oWP-2v-sKF" secondAttribute="leading" id="KkP-UO-gMu"/>
+                <constraint firstItem="oWP-2v-sKF" firstAttribute="trailing" secondItem="00f-zm-eHH" secondAttribute="trailing" id="Ok6-JT-aCg"/>
+                <constraint firstItem="O9n-cD-Wfw" firstAttribute="leading" secondItem="Vg2-kS-R3f" secondAttribute="leading" id="Pa2-Wc-l7k"/>
+                <constraint firstItem="O9n-cD-Wfw" firstAttribute="trailing" secondItem="Vg2-kS-R3f" secondAttribute="trailing" id="RSu-zx-fqD"/>
+                <constraint firstItem="oWP-2v-sKF" firstAttribute="leading" secondItem="00f-zm-eHH" secondAttribute="leading" id="Rxs-Au-QfW"/>
+                <constraint firstItem="Vg2-kS-R3f" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="56" id="Xqq-Ya-yXA"/>
+                <constraint firstItem="01W-RE-3to" firstAttribute="leading" secondItem="Vg2-kS-R3f" secondAttribute="leading" id="dkv-zI-XSe"/>
+                <constraint firstItem="73F-5W-ofe" firstAttribute="trailing" secondItem="oWP-2v-sKF" secondAttribute="trailing" id="m4x-9j-7op"/>
+                <constraint firstItem="01W-RE-3to" firstAttribute="trailing" secondItem="Vg2-kS-R3f" secondAttribute="trailing" id="mA4-tm-Jsj"/>
+                <constraint firstItem="01W-RE-3to" firstAttribute="top" secondItem="Vg2-kS-R3f" secondAttribute="bottom" constant="24" id="mdV-j1-GTw"/>
+                <constraint firstItem="00f-zm-eHH" firstAttribute="leading" secondItem="Vg2-kS-R3f" secondAttribute="trailing" constant="12" id="qvK-Uz-uCX"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+        </view>
+    </objects>
+</document>

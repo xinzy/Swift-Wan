@@ -16,6 +16,10 @@ class UserViewController: BaseTableViewController {
         return headerView
     } ()
     
+    private lazy var mPresenter: UserViewPresenter<UserViewController> = {
+        return UserViewPresenter(self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -28,6 +32,12 @@ class UserViewController: BaseTableViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         headerView.user = User.me
+        
+        if User.me.isLogin {
+            mPresenter.fetchScore()
+        } else {
+            headerView.score = nil
+        }
     }
 }
 
@@ -42,15 +52,29 @@ extension UserViewController: UserHeaderViewDelegate {
         case .info:
             let controller = UserInfoViewController()
             navigationController?.pushViewController(controller, animated: true)
+        case .favor:
+            let controller = FavorViewController()
+            navigationController?.pushViewController(controller, animated: true)
+        case .rank:
+            let controller = RankViewController()
+            navigationController?.pushViewController(controller, animated: true)
+        case .score:
+            let controller = ScoreHistoryViewController()
+            navigationController?.pushViewController(controller, animated: true)
         default:
-        let controller = TestCollectionViewController()
-        navigationController?.pushViewController(controller, animated: true)
+            let controller = TestCollectionViewController()
+            navigationController?.pushViewController(controller, animated: true)
             break
         }
     }
 }
 
-extension UserViewController {
+//MARK: - View
+extension UserViewController: UserView {
+    func showScore(_ score: Score) {
+        headerView.score = score
+    }
+    
     @objc private func settingClick() {
     }
 }

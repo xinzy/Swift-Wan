@@ -20,6 +20,7 @@ class KnowledgeArticleListViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = chapter.name
 
         tableView.dataSource = self
         tableView.delegate = self

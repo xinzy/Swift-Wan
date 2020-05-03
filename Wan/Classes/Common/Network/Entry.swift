@@ -73,6 +73,8 @@ struct Article: HandyJSON {
     var link: String = ""
     var publishTime: Int = 0
     var envelopePic: String = ""
+    var shareUser: String = ""
+    
     
     var fresh: Bool = false
     var type: Int = 0
@@ -106,7 +108,7 @@ struct Article: HandyJSON {
     }
     
     var displayAuthor: String {
-        author.isEmpty ? "匿名" : author
+        author.isNotEmpty ? author : (shareUser.isNotEmpty ? shareUser : "匿名")
     }
     
     /// 是否置顶文章
@@ -150,9 +152,7 @@ struct User: HandyJSON {
     
     var collectIds: [Int] = [Int]()
     
-    var favorCount: Int {
-        collectIds.count
-    }
+    var favorCount: Int = 0
     
     var isLogin: Bool {
         id != 0
@@ -162,6 +162,8 @@ struct User: HandyJSON {
     private static let KEY_LOGIN_ID = "LoginId"
     private static let KEY_LOGIN_USERNAME = "LoginUsername"
     private static let KEY_LOGIN_NICKNAME = "LoginNickname"
+    private static let KEY_LOGIN_FAVOR_COUNT = "LoginFavorCount"
+
     
     static func autoLogin() {
         let id = UserDefaults.standard.integer(forKey: User.KEY_LOGIN_ID)
@@ -170,16 +172,19 @@ struct User: HandyJSON {
         User.me.id = id
         User.me.username = UserDefaults.standard.string(forKey: User.KEY_LOGIN_USERNAME) ?? ""
         User.me.nickname = UserDefaults.standard.string(forKey: KEY_LOGIN_USERNAME) ?? ""
+        User.me.favorCount = UserDefaults.standard.integer(forKey: KEY_LOGIN_FAVOR_COUNT)
     }
     
     mutating func login(_ user: User) {
         self.id = user.id
         self.username = user.username
         self.nickname = user.nickname
+        self.favorCount = user.collectIds.count
         
-        UserDefaults.standard.set(user.id, forKey: User.KEY_LOGIN_ID)
-        UserDefaults.standard.set(user.username, forKey: User.KEY_LOGIN_USERNAME)
-        UserDefaults.standard.set(user.nickname, forKey: User.KEY_LOGIN_NICKNAME)
+        UserDefaults.standard.set(self.id, forKey: User.KEY_LOGIN_ID)
+        UserDefaults.standard.set(self.username, forKey: User.KEY_LOGIN_USERNAME)
+        UserDefaults.standard.set(self.nickname, forKey: User.KEY_LOGIN_NICKNAME)
+        UserDefaults.standard.set(self.favorCount, forKey: User.KEY_LOGIN_FAVOR_COUNT)
     }
     
     mutating func logout() {
@@ -190,12 +195,103 @@ struct User: HandyJSON {
         UserDefaults.standard.set(0, forKey: User.KEY_LOGIN_ID)
         UserDefaults.standard.set("", forKey: User.KEY_LOGIN_USERNAME)
         UserDefaults.standard.set("", forKey: User.KEY_LOGIN_NICKNAME)
+        UserDefaults.standard.set(0, forKey: User.KEY_LOGIN_FAVOR_COUNT)
     }
 }
 
+//MARK: - 我的积分
+/// 积分
+struct Score: HandyJSON {
+    var coinCount: Int = 0
+    var level: Int = 0
+    var rank: Int = 0
+    var userId: Int = 0
+    var username: String = ""
+}
+
+//MARK: - 积分历史记录
+/// 积分历史记录
+struct ScoreHistory: HandyJSON {
+    var coinCount: Int = 0
+    var date: Int = 0
+    var id: Int = 0
+    var userId: Int = 0
+    var type: Int = 0
+    var desc: String = ""
+    var reason: String = ""
+    var userName: String = ""
+    
+    var displayTime: String {
+        formatTime(millisecond: date)
+    }
+}
+
+//MARK: - 导航
 /// 导航数据
 struct Navi: HandyJSON {
     var cid: Int = 0
     var name: String = ""
     var articles: [Article] = [Article]()
+}
+
+//MARK: - 收藏
+/// 收藏
+struct Favor: HandyJSON {
+    var id: Int = 0
+    var author: String = ""
+    var chapterId: Int = 0
+    var chapterName: String = ""
+    var desc: String = ""
+    var envelopePic: String = ""
+    var link: String = ""
+    var origin: String = ""
+    var originId: Int = 0
+    var publishTime: Int = 0
+    var title: String = ""
+    var userId: Int = 0
+    var visible: Int = 0
+    var zan: Int = 0
+    
+    var displayTitle: String {
+        let dict = [
+            "&ldquo;" : "“",
+            "&rdquo;" : "”",
+            "&mdash;" : "-",
+            "&nbsp;" : " ",
+            "&quot;":"\"",
+            "&lt;" : "<",
+            "&gt;" : ">",
+            "&amp;" : "&",
+            "&apos;" : "'",
+            "&cent;" : "￠",
+            "&pound;" : "£",
+            "&yen;" : "¥",
+            "&euro;" : "€",
+            "&#167;" : "§",
+            "&copy;" : "©",
+            "&reg;" : "®",
+            "&trade;" : "™",
+            "&times;" : "×",
+            "&divide;" : "÷",
+        ]
+        return title.replaceAll(dict)
+    }
+    
+    var displayAuthor: String {
+        author.isNotEmpty ? author : "匿名"
+    }
+    
+    var displayTime: String {
+        formatTime(millisecond: publishTime)
+    }
+}
+
+//MARK: - 搜索热词
+///搜索热词
+struct HotKey: HandyJSON {
+    var id: Int = 0
+    var link: String = ""
+    var name: String = ""
+    var order: Int = 1
+    var visible: Int = 0
 }

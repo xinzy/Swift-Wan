@@ -19,6 +19,7 @@ class KnowledgeArticleViewController: TabmanViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        title = chapter.name
 
         initTab()
     }

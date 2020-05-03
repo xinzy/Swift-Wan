@@ -21,9 +21,14 @@ class UserHeaderView: UIView, NibLoadable {
     @IBOutlet weak var avatarImageView: AnimatableImageView!
     
     @IBOutlet weak var usernameBtn: UIButton!
+    
     @IBOutlet weak var favorBtn: UIButton!
     @IBOutlet weak var rankBtn: UIButton!
     @IBOutlet weak var scoreBtn: UIButton!
+    
+    @IBOutlet weak var favorLabel: UILabel!
+    @IBOutlet weak var rankLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
     
     @IBOutlet weak var bottomView: UIView!
     @IBOutlet weak var bottomViewHeight: NSLayoutConstraint!
@@ -43,13 +48,25 @@ class UserHeaderView: UIView, NibLoadable {
                 return
             }
             usernameBtn.setTitle("欢迎您， \(user.nickname)", for: .normal)
+            favorLabel.text = "\(user.favorCount)"
             usernameBtn.isSelected = true
             bottomView.isHidden = false
             bottomViewHeight.constant = 56
             self.height = 169
             
-            favorBtn.setTitle("\(user.favorCount + 11)", for: .normal)
             layoutIfNeeded()
+        }
+    }
+    
+    var score: Score? {
+        didSet {
+            if score == nil {
+                scoreLabel.text = "0"
+                rankLabel.text = "0"
+            } else {
+                scoreLabel.text = "\(score?.coinCount ?? 0)"
+                rankLabel.text = "\(score?.rank ?? 0)"
+            }
         }
     }
     

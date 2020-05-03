@@ -31,4 +31,9 @@ extension UITableView {
         let indexPath = IndexPath(row: row, section: section)
         self.reloadRows(at: [indexPath], with: animation)
     }
+    
+    func deleteRow(_ row: Int, _ section: Int, with animation: RowAnimation = .automatic) {
+        let indexPath = IndexPath(row: row, section: section)
+        self.deleteRows(at: [indexPath], with: animation)
+    }
 }

@@ -60,6 +60,17 @@ extension HttpApiProtocol {
         httpRequest(homeArticleUrl(page), List<Article>.self, callback: callback)
     }
     
+    /// 搜索热词
+    static func loadHotKey(_ callback: @escaping RequestCallback<[HotKey]>) {
+        httpRequest(hotKeywordUrl, [HotKey].self, callback: callback)
+    }
+    
+    /// 搜索
+    static func loadSearchResult(_ page: Int, _ key: String, _ callback: @escaping RequestCallback<List<Article>>) {
+        let url = searchUrl(page)
+        let param = ["k" : key]
+        httpRequest(url, List<Article>.self, method: .post, params: param, callback: callback)
+    }
 }
 
 //MARK: - 微信公众号
@@ -134,6 +145,27 @@ extension HttpApiProtocol {
     }
 }
 
+//MARK: - 积分
+extension HttpApiProtocol {
+    
+    /// 排行榜
+    static func loadRank(_ page: Int, _ callback: @escaping RequestCallback<List<Score>>) {
+        let url = rankUrl(page)
+        httpRequest(url, List<Score>.self, callback: callback)
+    }
+    
+    /// 我的积分
+    static func loadMyScore(_ callback: @escaping RequestCallback<Score>) {
+        httpRequest(scoreUrl, Score.self, callback: callback)
+    }
+    
+    /// 积分历史
+    static func loadScoreHistory(_ page: Int, _ callback: @escaping RequestCallback<List<ScoreHistory>>) {
+        let url = scoreHistoryUrl(page)
+        httpRequest(url, List<ScoreHistory>.self, callback: callback)
+    }
+}
+
 //MARK: - 收藏
 extension HttpApiProtocol {
     
@@ -147,6 +179,28 @@ extension HttpApiProtocol {
     static func uncollectSelfArticle(_ id: Int, _ callback: @escaping RequestCallback<Any>) {
         let url = uncollectionSelfUrl(id)
         httpRequest(url, Any.self, method: .post, callback: callback)
+    }
+    
+    /// 我的收藏列表取消收藏
+    static func uncollectOrigin(_ id: Int, _ callback: @escaping RequestCallback<Any>) {
+        let url = uncollectOriginUrl(id)
+        httpRequest(url, Any.self, method: .post, callback: callback)
+    }
+    
+    /// 收藏文章列表
+    static func loadCollectList(_ page: Int, _ callback: @escaping RequestCallback<List<Favor>>) {
+        let url = collectList(page)
+        httpRequest(url, List<Favor>.self, callback: callback)
+    }
+    
+    /// 添加站外文章
+    static func addCollect(_ title: String, _ author: String, _ link: String, _ callback: @escaping RequestCallback<Any>) {
+        let params = [
+            "title": title,
+            "author": author,
+            "link": link
+        ]
+        httpRequest(collectUrl, Any.self, method: .post, params: params, callback: callback)
     }
 }
 

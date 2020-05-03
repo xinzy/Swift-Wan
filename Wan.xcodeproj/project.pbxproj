@@ -100,6 +100,35 @@
 		DEA562E6245AF29A0040C8B7 /* TestCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562E5245AF29A0040C8B7 /* TestCollectionViewController.swift */; };
 		DEA562EA245AF2E90040C8B7 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562E8245AF2E90040C8B7 /* TestCollectionViewCell.swift */; };
 		DEA562EB245AF2E90040C8B7 /* TestCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */; };
+		DEA562ED245BCB490040C8B7 /* FavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562EC245BCB490040C8B7 /* FavorViewController.swift */; };
+		DEA562EF245C10F60040C8B7 /* FavorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562EE245C10F60040C8B7 /* FavorContract.swift */; };
+		DEA562F1245C11BB0040C8B7 /* FavorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562F0245C11BB0040C8B7 /* FavorViewPresenter.swift */; };
+		DEA562F4245C159F0040C8B7 /* FavorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562F2245C159F0040C8B7 /* FavorTableViewCell.swift */; };
+		DEA562F5245C159F0040C8B7 /* FavorTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562F3245C159F0040C8B7 /* FavorTableViewCell.xib */; };
+		DEA562F8245C271E0040C8B7 /* AddFavorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562F6245C271E0040C8B7 /* AddFavorViewController.swift */; };
+		DEA562F9245C271E0040C8B7 /* AddFavorViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA562F7245C271E0040C8B7 /* AddFavorViewController.xib */; };
+		DEA562FB245C33820040C8B7 /* AddFavorContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562FA245C33820040C8B7 /* AddFavorContract.swift */; };
+		DEA562FD245C33D80040C8B7 /* AddFavorViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562FC245C33D80040C8B7 /* AddFavorViewPresenter.swift */; };
+		DEA562FF245C3A920040C8B7 /* NotificationCenter+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562FE245C3A920040C8B7 /* NotificationCenter+.swift */; };
+		DEA56301245C3F930040C8B7 /* UserContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56300245C3F930040C8B7 /* UserContract.swift */; };
+		DEA56303245C3FE50040C8B7 /* UserViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56302245C3FE50040C8B7 /* UserViewPresenter.swift */; };
+		DEA56305245C4DB20040C8B7 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56304245C4DB20040C8B7 /* RankViewController.swift */; };
+		DEA56307245C62330040C8B7 /* RankContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56306245C62330040C8B7 /* RankContract.swift */; };
+		DEA56309245C633B0040C8B7 /* RankViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56308245C633B0040C8B7 /* RankViewPresenter.swift */; };
+		DEA5630C245C69160040C8B7 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5630A245C69150040C8B7 /* RankTableViewCell.swift */; };
+		DEA5630D245C69160040C8B7 /* RankTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA5630B245C69160040C8B7 /* RankTableViewCell.xib */; };
+		DEA5630F245D1E2A0040C8B7 /* ScoreHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5630E245D1E2A0040C8B7 /* ScoreHistoryViewController.swift */; };
+		DEA56311245D1F9D0040C8B7 /* ScoreHistoryContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56310245D1F9D0040C8B7 /* ScoreHistoryContract.swift */; };
+		DEA56313245D206F0040C8B7 /* ScoreHistoryViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56312245D206F0040C8B7 /* ScoreHistoryViewPresenter.swift */; };
+		DEA56316245D24160040C8B7 /* ScoreHistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56314245D24160040C8B7 /* ScoreHistoryTableViewCell.swift */; };
+		DEA56317245D24160040C8B7 /* ScoreHistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA56315245D24160040C8B7 /* ScoreHistoryTableViewCell.xib */; };
+		DEA5631A245D2CE20040C8B7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56318245D2CE20040C8B7 /* SearchViewController.swift */; };
+		DEA5631B245D2CE20040C8B7 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA56319245D2CE20040C8B7 /* SearchViewController.xib */; };
+		DEA5631E245D39CE0040C8B7 /* HotKeyCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5631D245D39CE0040C8B7 /* HotKeyCollectionHeaderView.swift */; };
+		DEA56321245D3C6A0040C8B7 /* HotKeyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA5631F245D3C6A0040C8B7 /* HotKeyCollectionViewCell.swift */; };
+		DEA56322245D3C6A0040C8B7 /* HotKeyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DEA56320245D3C6A0040C8B7 /* HotKeyCollectionViewCell.xib */; };
+		DEA56324245D3D8E0040C8B7 /* SearchContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56323245D3D8E0040C8B7 /* SearchContract.swift */; };
+		DEA56326245D3DF50040C8B7 /* SearchViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA56325245D3DF50040C8B7 /* SearchViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -213,6 +242,35 @@
 		DEA562E5245AF29A0040C8B7 /* TestCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewController.swift; sourceTree = "<group>"; };
 		DEA562E8245AF2E90040C8B7 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
 		DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEA562EC245BCB490040C8B7 /* FavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorViewController.swift; sourceTree = "<group>"; };
+		DEA562EE245C10F60040C8B7 /* FavorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorContract.swift; sourceTree = "<group>"; };
+		DEA562F0245C11BB0040C8B7 /* FavorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorViewPresenter.swift; sourceTree = "<group>"; };
+		DEA562F2245C159F0040C8B7 /* FavorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavorTableViewCell.swift; sourceTree = "<group>"; };
+		DEA562F3245C159F0040C8B7 /* FavorTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavorTableViewCell.xib; sourceTree = "<group>"; };
+		DEA562F6245C271E0040C8B7 /* AddFavorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavorViewController.swift; sourceTree = "<group>"; };
+		DEA562F7245C271E0040C8B7 /* AddFavorViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddFavorViewController.xib; sourceTree = "<group>"; };
+		DEA562FA245C33820040C8B7 /* AddFavorContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavorContract.swift; sourceTree = "<group>"; };
+		DEA562FC245C33D80040C8B7 /* AddFavorViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFavorViewPresenter.swift; sourceTree = "<group>"; };
+		DEA562FE245C3A920040C8B7 /* NotificationCenter+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+.swift"; sourceTree = "<group>"; };
+		DEA56300245C3F930040C8B7 /* UserContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserContract.swift; sourceTree = "<group>"; };
+		DEA56302245C3FE50040C8B7 /* UserViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewPresenter.swift; sourceTree = "<group>"; };
+		DEA56304245C4DB20040C8B7 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		DEA56306245C62330040C8B7 /* RankContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankContract.swift; sourceTree = "<group>"; };
+		DEA56308245C633B0040C8B7 /* RankViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewPresenter.swift; sourceTree = "<group>"; };
+		DEA5630A245C69150040C8B7 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
+		DEA5630B245C69160040C8B7 /* RankTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankTableViewCell.xib; sourceTree = "<group>"; };
+		DEA5630E245D1E2A0040C8B7 /* ScoreHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryViewController.swift; sourceTree = "<group>"; };
+		DEA56310245D1F9D0040C8B7 /* ScoreHistoryContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryContract.swift; sourceTree = "<group>"; };
+		DEA56312245D206F0040C8B7 /* ScoreHistoryViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryViewPresenter.swift; sourceTree = "<group>"; };
+		DEA56314245D24160040C8B7 /* ScoreHistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreHistoryTableViewCell.swift; sourceTree = "<group>"; };
+		DEA56315245D24160040C8B7 /* ScoreHistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreHistoryTableViewCell.xib; sourceTree = "<group>"; };
+		DEA56318245D2CE20040C8B7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DEA56319245D2CE20040C8B7 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		DEA5631D245D39CE0040C8B7 /* HotKeyCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyCollectionHeaderView.swift; sourceTree = "<group>"; };
+		DEA5631F245D3C6A0040C8B7 /* HotKeyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotKeyCollectionViewCell.swift; sourceTree = "<group>"; };
+		DEA56320245D3C6A0040C8B7 /* HotKeyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HotKeyCollectionViewCell.xib; sourceTree = "<group>"; };
+		DEA56323245D3D8E0040C8B7 /* SearchContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchContract.swift; sourceTree = "<group>"; };
+		DEA56325245D3DF50040C8B7 /* SearchViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewPresenter.swift; sourceTree = "<group>"; };
 		E7FEB30A14B19A9344DD90C7 /* Pods_WanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -264,6 +322,11 @@
 				DE5FA7A22455CC26002AFCAD /* LoginViewPresenter.swift */,
 				DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */,
 				DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */,
+				DEA562F0245C11BB0040C8B7 /* FavorViewPresenter.swift */,
+				DEA562FC245C33D80040C8B7 /* AddFavorViewPresenter.swift */,
+				DEA56302245C3FE50040C8B7 /* UserViewPresenter.swift */,
+				DEA56308245C633B0040C8B7 /* RankViewPresenter.swift */,
+				DEA56312245D206F0040C8B7 /* ScoreHistoryViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -274,6 +337,11 @@
 				DE5FA7A02455CBCA002AFCAD /* LoginContract.swift */,
 				DE7B136B245874200030E2EC /* UserInfoContract.swift */,
 				DEA562CA245915BA0040C8B7 /* RegisterContract.swift */,
+				DEA562EE245C10F60040C8B7 /* FavorContract.swift */,
+				DEA562FA245C33820040C8B7 /* AddFavorContract.swift */,
+				DEA56300245C3F930040C8B7 /* UserContract.swift */,
+				DEA56306245C62330040C8B7 /* RankContract.swift */,
+				DEA56310245D1F9D0040C8B7 /* ScoreHistoryContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -321,6 +389,7 @@
 		DE65EDEB244E84D800E92A5F /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				DEA5631C245D37CA0040C8B7 /* View */,
 				DE65EE0924511CB600E92A5F /* Presenter */,
 				DE65EDFA244ECB1C00E92A5F /* Contract */,
 				DE65EDEC244E84D800E92A5F /* Controller */,
@@ -333,6 +402,8 @@
 			isa = PBXGroup;
 			children = (
 				DE65EDF2244E891300E92A5F /* HomeViewController.swift */,
+				DEA56318245D2CE20040C8B7 /* SearchViewController.swift */,
+				DEA56319245D2CE20040C8B7 /* SearchViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -373,6 +444,7 @@
 			isa = PBXGroup;
 			children = (
 				DE65EDFB244ECB5200E92A5F /* HomeContract.swift */,
+				DEA56323245D3D8E0040C8B7 /* SearchContract.swift */,
 			);
 			path = Contract;
 			sourceTree = "<group>";
@@ -392,6 +464,7 @@
 			isa = PBXGroup;
 			children = (
 				DE65EE0A24511ED300E92A5F /* HomeViewPresenter.swift */,
+				DEA56325245D3DF50040C8B7 /* SearchViewPresenter.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -518,6 +591,11 @@
 				DE7B136424586ED80030E2EC /* RegisterViewController.xib */,
 				DE7B1367245871120030E2EC /* UserInfoViewController.swift */,
 				DE7B1368245871120030E2EC /* UserInfoViewController.xib */,
+				DEA562EC245BCB490040C8B7 /* FavorViewController.swift */,
+				DEA562F6245C271E0040C8B7 /* AddFavorViewController.swift */,
+				DEA562F7245C271E0040C8B7 /* AddFavorViewController.xib */,
+				DEA56304245C4DB20040C8B7 /* RankViewController.swift */,
+				DEA5630E245D1E2A0040C8B7 /* ScoreHistoryViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -658,6 +736,7 @@
 				DE67073E244D587200321185 /* UITableView+.swift */,
 				DE67073F244D587200321185 /* UIColor+.swift */,
 				DE65EE602454398700E92A5F /* Array+.swift */,
+				DEA562FE245C3A920040C8B7 /* NotificationCenter+.swift */,
 			);
 			path = Extendsion;
 			sourceTree = "<group>";
@@ -693,6 +772,12 @@
 			children = (
 				DE7B135F245675050030E2EC /* UserHeaderView.swift */,
 				DE7B13612456750C0030E2EC /* UserHeaderView.xib */,
+				DEA562F2245C159F0040C8B7 /* FavorTableViewCell.swift */,
+				DEA562F3245C159F0040C8B7 /* FavorTableViewCell.xib */,
+				DEA5630A245C69150040C8B7 /* RankTableViewCell.swift */,
+				DEA5630B245C69160040C8B7 /* RankTableViewCell.xib */,
+				DEA56314245D24160040C8B7 /* ScoreHistoryTableViewCell.swift */,
+				DEA56315245D24160040C8B7 /* ScoreHistoryTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -713,6 +798,16 @@
 				DEA562E9245AF2E90040C8B7 /* TestCollectionViewCell.xib */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		DEA5631C245D37CA0040C8B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DEA5631D245D39CE0040C8B7 /* HotKeyCollectionHeaderView.swift */,
+				DEA5631F245D3C6A0040C8B7 /* HotKeyCollectionViewCell.swift */,
+				DEA56320245D3C6A0040C8B7 /* HotKeyCollectionViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -804,17 +899,23 @@
 				DEA562EB245AF2E90040C8B7 /* TestCollectionViewCell.xib in Resources */,
 				DE65EE7A245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.xib in Resources */,
 				DEA562E3245AC8DA0040C8B7 /* NavigationItemCollectionViewCell.xib in Resources */,
+				DEA562F9245C271E0040C8B7 /* AddFavorViewController.xib in Resources */,
 				DEA562DF245AC01C0040C8B7 /* NavigationTableViewCell.xib in Resources */,
+				DEA56317245D24160040C8B7 /* ScoreHistoryTableViewCell.xib in Resources */,
 				DE67071D244D577B00321185 /* LaunchScreen.storyboard in Resources */,
 				DE65EE5D245435E200E92A5F /* SquareViewController.xib in Resources */,
 				DE65EE132451655D00E92A5F /* ArticleTableViewCell.xib in Resources */,
 				DEA562DB245AB7500040C8B7 /* NavigationCategoryTableViewCell.xib in Resources */,
 				DE65EE372452C18E00E92A5F /* ProjectTableViewCell.xib in Resources */,
+				DEA5630D245C69160040C8B7 /* RankTableViewCell.xib in Resources */,
 				DE67071A244D577B00321185 /* Assets.xcassets in Resources */,
 				DE65EE19245181E000E92A5F /* WebViewController.xib in Resources */,
+				DEA56322245D3C6A0040C8B7 /* HotKeyCollectionViewCell.xib in Resources */,
 				DE7B136A245871120030E2EC /* UserInfoViewController.xib in Resources */,
 				DE5FA79D2455CAC5002AFCAD /* LoginViewController.xib in Resources */,
+				DEA562F5245C159F0040C8B7 /* FavorTableViewCell.xib in Resources */,
 				DE7B13622456750C0030E2EC /* UserHeaderView.xib in Resources */,
+				DEA5631B245D2CE20040C8B7 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -896,21 +997,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEA56324245D3D8E0040C8B7 /* SearchContract.swift in Sources */,
+				DEA56303245C3FE50040C8B7 /* UserViewPresenter.swift in Sources */,
 				DE65EE252451C46500E92A5F /* WechatArticlesContract.swift in Sources */,
+				DEA56305245C4DB20040C8B7 /* RankViewController.swift in Sources */,
 				DE65EE0D2451202300E92A5F /* HttpApi.swift in Sources */,
+				DEA5630C245C69160040C8B7 /* RankTableViewCell.swift in Sources */,
 				DE65EE18245181E000E92A5F /* WebViewController.swift in Sources */,
 				DE65EE06245092A700E92A5F /* BannerView.swift in Sources */,
 				DEA562D1245A79BB0040C8B7 /* KnowledgeArticleListViewController.swift in Sources */,
+				DEA5630F245D1E2A0040C8B7 /* ScoreHistoryViewController.swift in Sources */,
 				DE65EE5F2454368C00E92A5F /* PagerTab.swift in Sources */,
 				DEA562DA245AB7500040C8B7 /* NavigationCategoryTableViewCell.swift in Sources */,
 				DE5FA7A32455CC26002AFCAD /* LoginViewPresenter.swift in Sources */,
 				DE670744244D587200321185 /* UIView+.swift in Sources */,
+				DEA562ED245BCB490040C8B7 /* FavorViewController.swift in Sources */,
 				DE7B1360245675050030E2EC /* UserHeaderView.swift in Sources */,
 				DE65EE02244ECBBB00E92A5F /* BaseView.swift in Sources */,
 				DE65EE1E2451AA6600E92A5F /* WechatContract.swift in Sources */,
+				DEA562FF245C3A920040C8B7 /* NotificationCenter+.swift in Sources */,
 				DE65EE0B24511ED300E92A5F /* HomeViewPresenter.swift in Sources */,
+				DEA56316245D24160040C8B7 /* ScoreHistoryTableViewCell.swift in Sources */,
 				DE670715244D577700321185 /* MainViewController.swift in Sources */,
 				DE5FA7A12455CBCA002AFCAD /* LoginContract.swift in Sources */,
+				DEA562FD245C33D80040C8B7 /* AddFavorViewPresenter.swift in Sources */,
+				DEA562F1245C11BB0040C8B7 /* FavorViewPresenter.swift in Sources */,
+				DEA56313245D206F0040C8B7 /* ScoreHistoryViewPresenter.swift in Sources */,
+				DEA562F8245C271E0040C8B7 /* AddFavorViewController.swift in Sources */,
 				DEA562EA245AF2E90040C8B7 /* TestCollectionViewCell.swift in Sources */,
 				DE65EDDD244DD89400E92A5F /* Imports.swift in Sources */,
 				DEA562E6245AF29A0040C8B7 /* TestCollectionViewController.swift in Sources */,
@@ -920,6 +1033,7 @@
 				DE670711244D577700321185 /* AppDelegate.swift in Sources */,
 				DE65EE66245559FE00E92A5F /* SquareContract.swift in Sources */,
 				DE65EDF9244E893700E92A5F /* WechatViewController.swift in Sources */,
+				DEA562EF245C10F60040C8B7 /* FavorContract.swift in Sources */,
 				DE65EE312452B86000E92A5F /* ProjectListContract.swift in Sources */,
 				DE670742244D587200321185 /* General.swift in Sources */,
 				DE670749244D587200321185 /* UITableView+.swift in Sources */,
@@ -928,8 +1042,11 @@
 				DE65EE272451C48400E92A5F /* WechatArticlesViewPresenter.swift in Sources */,
 				DE65EDE8244E80F200E92A5F /* MainNavigationController.swift in Sources */,
 				DE65EDFC244ECB5200E92A5F /* HomeContract.swift in Sources */,
+				DEA56307245C62330040C8B7 /* RankContract.swift in Sources */,
+				DEA56309245C633B0040C8B7 /* RankViewPresenter.swift in Sources */,
 				DE65EE212451AAAB00E92A5F /* WechatViewPresenter.swift in Sources */,
 				DE65EDE1244DDC9600E92A5F /* Entry.swift in Sources */,
+				DEA562FB245C33820040C8B7 /* AddFavorContract.swift in Sources */,
 				DEA562CD245916660040C8B7 /* RegisterViewPresenter.swift in Sources */,
 				DE5FA79C2455CAC5002AFCAD /* LoginViewController.swift in Sources */,
 				DEA562D5245AA1900040C8B7 /* KnowledgeArticleListViewPresenter.swift in Sources */,
@@ -937,17 +1054,22 @@
 				DE65EE79245578B700E92A5F /* SquareKnowledgeSubCollectionViewCell.swift in Sources */,
 				DE65EDF7244E892A00E92A5F /* ProjectViewController.swift in Sources */,
 				DE65EE6324551CD500E92A5F /* TagLayout.swift in Sources */,
+				DEA56301245C3F930040C8B7 /* UserContract.swift in Sources */,
 				DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */,
 				DE65EE082450937600E92A5F /* BaseTableViewController.swift in Sources */,
 				DE67074A244D587200321185 /* UIColor+.swift in Sources */,
+				DEA56326245D3DF50040C8B7 /* SearchViewPresenter.swift in Sources */,
 				DE7B1369245871120030E2EC /* UserInfoViewController.swift in Sources */,
 				DE670748244D587200321185 /* UICollectionView+.swift in Sources */,
 				DE65EE5B245432FB00E92A5F /* SquareViewController.swift in Sources */,
 				DE7B136E245874800030E2EC /* UserInfoViewPresenter.swift in Sources */,
+				DEA56321245D3C6A0040C8B7 /* HotKeyCollectionViewCell.swift in Sources */,
 				DE65EE332452B8FD00E92A5F /* ProjectListViewPresenter.swift in Sources */,
+				DEA562F4245C159F0040C8B7 /* FavorTableViewCell.swift in Sources */,
 				DE65EE4B2452E4BA00E92A5F /* FlowLayout.swift in Sources */,
 				DE670713244D577700321185 /* SceneDelegate.swift in Sources */,
 				DE65EE612454398700E92A5F /* Array+.swift in Sources */,
+				DEA56311245D1F9D0040C8B7 /* ScoreHistoryContract.swift in Sources */,
 				DE65EE2F2452B84300E92A5F /* ProjectListViewController.swift in Sources */,
 				DE65EE04244ECE3F00E92A5F /* BasePresenter.swift in Sources */,
 				DEA562CF2459929B0040C8B7 /* KnowledgeArticleViewController.swift in Sources */,
@@ -960,6 +1082,7 @@
 				DE65EDFF244ECBA600E92A5F /* BaseViewController.swift in Sources */,
 				DEA562DE245AC01C0040C8B7 /* NavigationTableViewCell.swift in Sources */,
 				DE670745244D587200321185 /* String+.swift in Sources */,
+				DEA5631A245D2CE20040C8B7 /* SearchViewController.swift in Sources */,
 				DE7B136524586ED80030E2EC /* RegisterViewController.swift in Sources */,
 				DE65EE122451655D00E92A5F /* ArticleTableViewCell.swift in Sources */,
 				DE670746244D587200321185 /* Int+Extendsion.swift in Sources */,
@@ -969,6 +1092,7 @@
 				DE65EE6924555A8500E92A5F /* SquareViewPresenter.swift in Sources */,
 				DE670743244D587200321185 /* CGRect+.swift in Sources */,
 				DE65EE232451C27400E92A5F /* WechatArticlesViewController.swift in Sources */,
+				DEA5631E245D39CE0040C8B7 /* HotKeyCollectionHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

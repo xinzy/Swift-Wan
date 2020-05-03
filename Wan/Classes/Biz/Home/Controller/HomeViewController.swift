@@ -26,6 +26,9 @@ class HomeViewController: BaseTableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let searchBtn = UIBarButtonItem(barButtonSystemItem: .search, target: self, action: #selector(searchButtonClick))
+        navigationItem.rightBarButtonItems = [searchBtn]
 
         self.tableView.xRegister(ArticleTableViewCell.self)
         self.tableView.tableHeaderView = mBannerView
@@ -48,6 +51,13 @@ extension HomeViewController: HomeView {
         }
         mArticles += articles
         self.tableView.reloadData()
+    }
+    
+    @objc private func searchButtonClick() {
+        let controller = UINavigationController(rootViewController: SearchViewController())
+        controller.modalPresentationStyle = .fullScreen
+        present(controller, animated: true, completion: nil)
+//        navigationController?.pushViewController(controller, animated: true)
     }
 }
 
