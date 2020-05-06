@@ -85,6 +85,8 @@
 		DE7B136A245871120030E2EC /* UserInfoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE7B1368245871120030E2EC /* UserInfoViewController.xib */; };
 		DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136B245874200030E2EC /* UserInfoContract.swift */; };
 		DE7B136E245874800030E2EC /* UserInfoViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */; };
+		DE80E86424604C360003746C /* CGFloat+.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80E86324604C360003746C /* CGFloat+.swift */; };
+		DE80E866246063D70003746C /* Then.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE80E865246063D70003746C /* Then.swift */; };
 		DEA562CB245915BA0040C8B7 /* RegisterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CA245915BA0040C8B7 /* RegisterContract.swift */; };
 		DEA562CD245916660040C8B7 /* RegisterViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */; };
 		DEA562CF2459929B0040C8B7 /* KnowledgeArticleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA562CE2459929B0040C8B7 /* KnowledgeArticleViewController.swift */; };
@@ -227,6 +229,8 @@
 		DE7B1368245871120030E2EC /* UserInfoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserInfoViewController.xib; sourceTree = "<group>"; };
 		DE7B136B245874200030E2EC /* UserInfoContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoContract.swift; sourceTree = "<group>"; };
 		DE7B136D245874800030E2EC /* UserInfoViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewPresenter.swift; sourceTree = "<group>"; };
+		DE80E86324604C360003746C /* CGFloat+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CGFloat+.swift"; sourceTree = "<group>"; };
+		DE80E865246063D70003746C /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		DEA562CA245915BA0040C8B7 /* RegisterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterContract.swift; sourceTree = "<group>"; };
 		DEA562CC245916660040C8B7 /* RegisterViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewPresenter.swift; sourceTree = "<group>"; };
 		DEA562CE2459929B0040C8B7 /* KnowledgeArticleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KnowledgeArticleViewController.swift; sourceTree = "<group>"; };
@@ -736,7 +740,9 @@
 				DE67073E244D587200321185 /* UITableView+.swift */,
 				DE67073F244D587200321185 /* UIColor+.swift */,
 				DE65EE602454398700E92A5F /* Array+.swift */,
+				DE80E86324604C360003746C /* CGFloat+.swift */,
 				DEA562FE245C3A920040C8B7 /* NotificationCenter+.swift */,
+				DE80E865246063D70003746C /* Then.swift */,
 			);
 			path = Extendsion;
 			sourceTree = "<group>";
@@ -1029,6 +1035,7 @@
 				DEA562E6245AF29A0040C8B7 /* TestCollectionViewController.swift in Sources */,
 				DE65EDE4244DEF4400E92A5F /* ApiUrls.swift in Sources */,
 				DE65EE752455756B00E92A5F /* SquareKnowledgeTableViewCell.swift in Sources */,
+				DE80E86424604C360003746C /* CGFloat+.swift in Sources */,
 				DE65EDDF244DD9B400E92A5F /* ApiFunc.swift in Sources */,
 				DE670711244D577700321185 /* AppDelegate.swift in Sources */,
 				DE65EE66245559FE00E92A5F /* SquareContract.swift in Sources */,
@@ -1058,6 +1065,7 @@
 				DE7B136C245874200030E2EC /* UserInfoContract.swift in Sources */,
 				DE65EE082450937600E92A5F /* BaseTableViewController.swift in Sources */,
 				DE67074A244D587200321185 /* UIColor+.swift in Sources */,
+				DE80E866246063D70003746C /* Then.swift in Sources */,
 				DEA56326245D3DF50040C8B7 /* SearchViewPresenter.swift in Sources */,
 				DE7B1369245871120030E2EC /* UserInfoViewController.swift in Sources */,
 				DE670748244D587200321185 /* UICollectionView+.swift in Sources */,

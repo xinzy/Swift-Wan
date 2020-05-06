@@ -8,7 +8,10 @@
 
 import UIKit
 
-protocol CellRegister { }
+protocol CellRegister {
+    static var identifier: String { get }
+    static var nib: UINib? { get }
+}
 
 extension CellRegister {
     static var identifier: String {
@@ -16,7 +19,7 @@ extension CellRegister {
     }
     
     static var nib: UINib? {
-        return UINib(nibName: Self.identifier, bundle: nil)
+        UINib(nibName: Self.identifier, bundle: nil)
     }
 }
 
